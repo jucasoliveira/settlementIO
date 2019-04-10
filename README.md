@@ -26,6 +26,9 @@ Platform can be `onPrem` or `onCloud`.
 **Reviews** can be more reliable.
 
 ## Cons
-Develop how the platform will recieve the content from the **Issuer** for **Review** 
+
+Who review the **Reviewer**
+
+Develop how the platform will recieve the content from the **Issuer** and deliver it to the **Reviewer**
 
 Define how a appeal must be accepeted by a **Reviewer**. A `punitive proof-of-stake` must be implemented to enforce the need of the reviewer be trustfull on his/her review(also can work for managing the user behaviour)
