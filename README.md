@@ -22,7 +22,7 @@ To create a blockchain notary book where the content to be reviewed will be issu
 
 ## Pros
 Companys can use the platform where the pool of nodes to be reviewed can give more returns for the content **Reviewers**
-Platform can be onPrem or onCloud.
+Platform can be `onPrem` or `onCloud`.
 **Reviews** can be more reliable.
 
 ## Cons
