@@ -11,11 +11,11 @@ To create a blockchain notary book where the content to be reviewed will be issu
 
 ## Process
 
-1 .The **Issuer**: a company like Facebook , request to the blockchain a content to be reviewed , issuing a value to be paid for that content.
+1. The **Issuer**: a company like Facebook , request to the blockchain a content to be reviewed , issuing a value to be paid for that content.
 
 2. The **Reviewer**: The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result , based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
 
-3. The **Witness**: once the **Reviews** are issued, node algorithms take the reviewers result, and record the content result on the blockchain, working as a notarybook for consultation by the Issuer. Therefor the value are divided by the Reviers and credit on their account, which will be paid montlhy/weekly
+3. The **Witness**: The **Witness** it's the algorithm which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputance`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the blockchain, working as a notarybook for consultation by the **Issuer**. Therefor the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly
 
 4. **Appealling** : users/reporters can appeal te result of the review and a new request are issued. `n` appeals can be granted by review, defined by the **Issuer**
 
