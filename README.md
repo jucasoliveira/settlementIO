@@ -4,8 +4,9 @@ A blockchain cloud plaform for content review
 As social media grow, the content inseted on that surpass millions of billions of data, and unfortunatelly the review of their contents are unaccurate.
 We can see a lot of users complaining that their content were demonetized, deleted or their account blocked. On the other way, news websites, blogs and others websites which have commentary section have a hard time to review and block texts that have hate speech, unadiviced/missleading context, etc.
 
+With that problem we see the governments having a stronger approach trying to finish with the freedom of speech on the internet. Our belief is that the speech on the platforms must be up to their policies to define what is allowed or not to be told , shared or viewed, not to the goverment. And that's the main reason this platform it's being created.
 
-In order to take content review to a new level , a new approach for this issue needs to be approached.
+So, in order to take content review to a new level , a new approach for this issue needs to be approached.
 
 ## Goal
 
