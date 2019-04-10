@@ -2,7 +2,10 @@
 A blockchain cloud plaform for content review
 
 As social media grow, the content inseted on that surpass millions of billions of data, and unfortunatelly the review of their contents are unaccurate.
-We can see a lot of users complaining that their content were demonetized, deleted or their account blocked. In order to take content review to a new level , a new approach for this issue needs to be approached.
+We can see a lot of users complaining that their content were demonetized, deleted or their account blocked. On the other way, news websites, blogs and others websites which have commentary section have a hard time to review and block texts that have hate speech, unadiviced/missleading context, etc.
+
+
+In order to take content review to a new level , a new approach for this issue needs to be approached.
 
 ## Goal
 
