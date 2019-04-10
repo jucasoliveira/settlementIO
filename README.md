@@ -17,7 +17,7 @@ To create a blockchain notary book where the content to be reviewed will be issu
 
 1. The **Issuer**: a company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for that content.
 
-2. The **Reviewer**: The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result , based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
+2. The **Reviewer**: The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result, the distribution of the review it's held by the **Witness**, who assign the review on the pool and check the  **Reviewer** `poor-of-integrity`, based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
 
 3. The **Witness**: The **Witness** it's the algorithm(miner) which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputation`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the blockchain, working as a notarybook for consultation by the **Issuer**. Therefore the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly. A **Witness** node who insert the **Review** first it's granted the fee charged from the **Issuer**.
 
@@ -39,4 +39,9 @@ Define how a appeal must be accepeted by a **Reviewer**. A `punitive proof-of-st
 
 
 ## Security measurement
+How to secure the block
+
+## Proof-of-Integrity
+
+A algorith where the integrity of the **Reviewer** it's pointed, based on his acitivity durring it's review process.
 
