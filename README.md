@@ -1,4 +1,4 @@
-# contentIo
+# contentIO
 A blockchain cloud plaform for content review
 
 As social media grow, the content inseted on that surpass millions of billions of data, and unfortunatelly the review of their contents are unaccurate.
