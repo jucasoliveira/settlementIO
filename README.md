@@ -45,5 +45,17 @@ How to secure the block
 
 ## Proof-of-Integrity
 
-A algorith where the integrity of the **Reviewer** it's pointed, based on his acitivity durring it's review process.
+A algorith where the integrity of the **Reviewer** it's pointed and rewarded, based on his activity durring it's review process.
+A content to be reviewed by third party must have a trustfull result, and for that the content have to be reviewed by a odd `n` of **Reviewers**(R). To ensure a review was trustfull, the application needs to give the benefit ouf doubt of what has been reviewed, and this doubt it's granted by the 3 external , and exential , actors of the process. They are the **Issuer**(I), the Reporter(r) and the content creator(cc).
+When a `r` reports a `cc` , the `I` sends to the network the content to be reviewed . The system take a number(n) of `R` , where this `n` it's a odd quantity of minimum of 5, to a maximum of 25 `R`, assigned to review the content issued. The `R` assigned to the content to be reviewed are designated based on the following :
+
+- Position on the assignment pool
+- Reputation
+- Waiting time
+
+### Assignment pool
+
+### Reputation
+
+### Waiting time (the last will be the first)
 
