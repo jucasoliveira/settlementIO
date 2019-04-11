@@ -58,12 +58,12 @@ When a _r_ reports a _cc_ , the _I_ sends to the network the content to be revie
 
 When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of assignemt. This _P_ it's responsable to queue the assignees to be assign to a next _r_. The quantity of _R_ to be assigned(_A_) will be the maximium of 25.
 
-`_A_ = _P_.slice(0,25)`
+`_A_ = (_R_[<_rp>_].slice(0,25))`
 
 
 ### Reputation
 
-A Range of reputation it's given to the _R_ , these are "Trustfull", "MidLevel", "Non-Trustfull" and "Undesirable". When a new _R_ it's created, a "Non-Trustfull" level it's assign to it's status. The more engaged 
+A Range of reputation(_rp_) it's given to the _R_ , these are "Trustfull", "MidLevel", "Non-Trustfull" and "Undesirable". When a new _R_ it's created, a "Non-Trustfull" level it's assign to it's status. The more engaged 
  
 ### Waiting time (the last will be the first)
 
