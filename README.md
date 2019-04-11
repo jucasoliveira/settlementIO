@@ -56,7 +56,11 @@ When a _r_ reports a _cc_ , the _I_ sends to the network the content to be revie
 
 ### Assignment pool
 
-When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of assignemt. This _P_ it's responsable to queue the assignees to be assign to a next _r_.
+When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of assignemt. This _P_ it's responsable to queue the assignees to be assign to a next _r_. The quantity of _R_ to be assigned(_A_) will be the maximium of 25.
+
+`_A_ = _P_.slice(0,25)`
+
+
 
 ### Reputation
 
