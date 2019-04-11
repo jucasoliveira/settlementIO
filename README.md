@@ -43,10 +43,10 @@ Define how a appeal must be accepeted by a **Reviewer**. A `punitive proof-of-st
 ## Security measurement
 How to secure the block
 
-## Proof-of-Integrity
+## Punitive Proof-of-Integrity
 
 A algorith where the integrity of the **Reviewer** it's pointed and rewarded, based on his activity durring it's review process.
-A content to be reviewed by third party must have a trustfull result, and for that the content have to be reviewed by a odd `n` of **Reviewers**(_R_). To ensure a review was trustfull, the application needs to give the benefit ouf doubt of what has been reviewed, and this doubt it's granted by the 3 external , and exential , actors of the process. They are the **Issuer**(_I_), the Reporter(_r_) and the content creator(_cc_).
+A content to be reviewed by third party must have a trustfull result, and for that the content have to be reviewed by a odd `n` of **Reviewers**(_R_). To ensure a review was trustfull, the application needs to give the benefit ouf doubt of what has been reviewed, and this doubt it's granted by the 3 external, actors of the process. They are the **Issuer**(_I_), the Reporter(_r_) and the content creator(_cc_).
 When a _r_ reports a _cc_ , the _I_ sends to the network the content to be reviewed(_r_) . The system take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 5, to a maximum of 25 of _R_, assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
 
 - Position on the assignment pool
@@ -59,7 +59,7 @@ When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of
 
 ### Reputation
 
-A Range of reputation it's given to the _R_ , these are "Trustfull", "MidLevel", "Non-Trustfull" and "Undesirable". When a new _R_ it's created, a "Non-Trustfull" level it's assign to it's status.
+A Range of reputation it's given to the _R_ , these are "Trustfull", "MidLevel", "Non-Trustfull" and "Undesirable". When a new _R_ it's created, a "Non-Trustfull" level it's assign to it's status. The more engaged 
  
 ### Waiting time (the last will be the first)
 
