@@ -61,10 +61,15 @@ When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of
 `_A_ = _P_.slice(0,25)`
 
 
-
 ### Reputation
 
 A Range of reputation it's given to the _R_ , these are "Trustfull", "MidLevel", "Non-Trustfull" and "Undesirable". When a new _R_ it's created, a "Non-Trustfull" level it's assign to it's status. The more engaged 
  
 ### Waiting time (the last will be the first)
 
+
+
+
+
+### Vote System
+A _A_ must have assignees distribuited on the following reputation  : _R_['Trustfull'] = 25% , _R_['MidLevel'] = 30%, _R_['Non-Trustfull'] = 45%. The 
