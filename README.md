@@ -72,4 +72,17 @@ A Range of reputation(_rp_) it's given to the _R_ , these are "Trustfull", "MidL
 
 
 ### Vote System
-A _A_ must have assignees distribuited on the following reputation  : _R_['Trustfull'] = 25% , _R_['MidLevel'] = 30%, _R_['Non-Trustfull'] = 45%. The 
+
+A _A_ must have assignees distribuited on the following reputation  : _R_['Trustfull'] = 25% , _R_['MidLevel'] = 30%, _R_['Non-Trustfull'] = 45%. The reputation defines the power of the vote of each assignees. The "Non-Trustfull"(_ntt_) it's the benchmark voter, where "MidLevel" has `1.5*ntt` vote power , and the "Trustfull" R having `2.5*ntt` vote power.
+
+
+### Result
+
+
+### Appeal
+
+
+### Reputation gratifications/punishment
+
+
+### Benefit of doubt and Single source of truth
