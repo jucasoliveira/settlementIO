@@ -43,7 +43,7 @@ Define how a appeal must be accepeted by a **Reviewer**. A `punitive proof-of-in
 ## Security measurement
 How to secure the block
 
-## Punitive Proof-of-Integrity
+## Punitive Proof-of-Suitability
 
 A algorith where the integrity of the **Reviewer** it's pointed and rewarded, based on his activity durring it's review process.
 
