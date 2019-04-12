@@ -150,6 +150,8 @@ The first `n` users connected to the platform who selfAssign the review lock the
 ### 3.4 Witness
 The **Witness** it's the algorithm(miner) which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputation`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the **Chain**, working as a notarybook for consultation by the **Issuer**. Therefore the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly. A **Witness** node who insert the **Review** first it's granted the fee charged from the **Issuer**. The **Issuer** can be a **Witness** for the chain.
 
+#### 3.4.1  Witness Assignment Logic
+
 ### 3.5 Appealer
 Users/reporters who have a **settlement** result against their will, can appeal te result of the review and a new request are issued. _n_ appeals can be granted by **settlement** , defined by default of by the **Issuer**. It's from the discrecy of the _I_ to notify the Appealer of the **settlement** dispute in course, but the Appealer must be notified after the result. And the _I_ must inform the network if the Appealer were notified when the **settlement** dispute were post in course
 
