@@ -33,7 +33,9 @@ The PoA send a data to a [pool of results](#pool-of-results), to be recorded on 
 ```javascript
 
 data : {
-  G : `${pd + (b*(60/100)) - wf)`
+  G : `${pd + (b*(60/100)) - wf)}`,
+  WP : `${wf + (b*(40/100))}`
+  RW : []
 }
 
 ```
