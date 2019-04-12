@@ -61,7 +61,8 @@ data : {
 
 A [Witness](#Witness) it's assigned to generate a block on the blockchain via PoS, PoW or the [Witness](#Witness) Assignment Logic. Then it will take _n_ data from the [pool of results](#pool-of-results) and record it on the blockchain
 
-A Appeal of the result can be issued and restart the process , generating a new data to be recorded on the block referring the hash of the last result, if the result it's the same, the **settlement** it's closed and It can't be Appealed again(only by the Issuer). If the Appeal it's giving a different result, it's fires the punitive algorithm which will degrate **Reputation** and a charge fee to be deducted of the previous peer reviewers and grant it to the Reviewers of the Appeal and to the Appealer. The reviewers charged can't appeal, as they aren't one of the 3 p2p actors.
+### 1.2 Apeal
+A Appeal of the [Result](#Result) can be issued and restart the process , generating a new data to be recorded on the block referring the hash of the last [Result](#Result). If the result it's the same, the **settlement** it's closed and It can't be Appealed again(only by the Issuer). If the Appeal it's giving a different result, the algorithm fires the Issuer, to give it's result. Depending of the result, it's fires the punitive algorithm which will reduce the **Reputation** and a charge fee to be deducted of the loosing peer reviewers, adding the carge on the prize of the next **settlement** dispute of the Issuer. The reviewers charged can't appeal, as they aren't one of the 3 p2p actors
 
 ```javascript
 
@@ -77,16 +78,14 @@ data : {
 ```
 
 
-The benefit of doubt of the Appeal can be issued by the Issuer, if enforce the first review to be the source of truth of the result, it's fires the punitive algorithm, giving the charges and Reputation around.
-
-### 1.2 Assignment pool
+### 1.3 Assignment pool
 
 When a _R_ request a **settlement** for a review , the algoritm will gets the first [reviewer](#33-Reviewer) available on the Pool (_P_) of assignemt and ask for a review, then the [reviewer](#33-Reviewer) it's sent to the end of the _P_. The [reviewer](#33-Reviewer) will recieve the **settlement** and the _I_ rules and define if the **settlement** it's on favor or aginst the [Reporter](#Reporter). After the [reviewer](#33-Reviewer) gives it's vote, the algorithm will require for the next assignee [reviewers](#33-Reviewer) on the _P_, having this [reviewer](#33-Reviewer) a different level of [Reputation](#Reputation)(as seen on [Assignment Ordenation](#121-assignment-ordenation)). After the minimum of 7 votes, the algorithm checks if the **settlement** have a result, if not it will assing another [reviewer](#33-Reviewer) until the next odd _n_ of votes and check for the result, having this behaviour untill _n_ of votes it's 25.   
 This _P_ it's responsable to queue the assignees to be assign to a next **settlement**. The quantity of _R_ to be assigned(_A_) will be the minimum of 7, to a maximum of 25.
 
 > `_A_ = _R_.get((reviewer) => { return reviewer })`
 
-#### 1.2.1 Assignment Ordenation
+#### 1.3.1 Assignment Ordenation
 In order to keep the pool assignment with the must trustfull result as possible, the [Reputation](#14-reputation) of _n_ _R_ should be diferenciated, getting the advantage of distribuiting _n_ assignees on a single review by a range of experienced _R_ to new one(or still pooly trustable) on the peer network. This range are defined by the _R_ reputation (defined on section [Reputation](#reputation)). To control and maintanin the trustfull of the network the votes will be weight by the assignee reputation, giving the system a controled and better results of the reviews.
 Doing that, the aiming it's to avoid misleaging engagement or vicious behaviour from more experienced peer users, avoid power centralization among the reputation peers, and give a more honest result of the review.
 The weight of the votes it's referred on the [Vote System Weight](#vote-system-weight) section.
