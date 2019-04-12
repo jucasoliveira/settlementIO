@@ -4,7 +4,7 @@ Creating and trustfull judgment system
 As social media grow, the content inserted on that surpass millions of billions of data, and unfortunatelly the review of their contents are debatable, even the companies holding the rules of the content review.
 We can see a lot of users complaining that their content were demonetized, deleted or their account blocked on various social medias. At the same time, news websites, blogs and others websites which have commentary section have a hard time to review and block texts that have hate speech, unadiviced/missleading context, etc.
 
-When I started to write this white paper, my main goal was to create a distributed approach that could help companies to expand their review process without having the cost to hire more thousand of workers to review a exponetial amount of data, where in a future will be almost impossible to then to review every content reported.
+When I started to write this white paper, my main goal was to create a distributed approach that could help companies to expand their review process without having the cost to hire more thousand of workers to review a exponetial amount of data, where in a future will be almost impossible to them to review every content reported.
 
 But , seeing that I could expand this to another areas, I realize this method of consensus I was trying to achieve was creating a new and private judgment system.
 
