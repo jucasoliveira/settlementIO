@@ -34,6 +34,8 @@ The PoA send a data to a [pool of results](#pool-of-results), to be recorded on 
 
 A [Witness](#Witness) it's assigned to write the result on the blockchain, 
 
+A Appeal of the result can be issued.
+
 ### Assignment pool
 
 When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of assignemt. This _P_ it's responsable to queue the assignees to be assign to a next _r_. The quantity of _R_ to be assigned(_A_) will be the minimum of 7, to a maximum of 25.
