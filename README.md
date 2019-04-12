@@ -15,15 +15,19 @@ To create a blockchain notary book where the content to be reviewed will be issu
 
 ## Actors
 
-1. The **Chain** : 
+### Chain
 
-2. The **Issuer**: a company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for that content.
+### Issuer
+A company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for that content.
 
-3. The **Reviewer**: The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result, the distribution of the review it's held by the **Witness**, who assign the review on the pool and check the  **Reviewer** `poor-of-integrity`, based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
+### Reviewer 
+The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result, the distribution of the review it's held by the **Witness**, who assign the review on the pool and check the  **Reviewer** `poor-of-integrity`, based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
 
-4. The **Witness**: The **Witness** it's the algorithm(miner) which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputation`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the **Chain**, working as a notarybook for consultation by the **Issuer**. Therefore the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly. A **Witness** node who insert the **Review** first it's granted the fee charged from the **Issuer**. The **Issuer** can be a **Witness** for the chain.
+### Witness
+The **Witness** it's the algorithm(miner) which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputation`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the **Chain**, working as a notarybook for consultation by the **Issuer**. Therefore the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly. A **Witness** node who insert the **Review** first it's granted the fee charged from the **Issuer**. The **Issuer** can be a **Witness** for the chain.
 
-5. **Appealling** : users/reporters can appeal te result of the review and a new request are issued. `n` appeals can be granted by review, defined by the **Issuer**
+### Appealling
+users/reporters can appeal te result of the review and a new request are issued. `n` appeals can be granted by review, defined by the **Issuer**
 
 
 ## Pros
@@ -45,7 +49,7 @@ How to secure the block
 
 ## Punitive Proof-of-Adequacy
 
-The punitive Proof-of-Adequacy is a type of algorithm layer by which a cryptocurrency blockchain network aims to use distributed consensus to achieve a better result on a **settelment** dispute. In PoA-based cryptocurrencies there are two level of peers, where PoA act choosing one the P2P curators(**Reviewers**) of a contestation via various combinations of random selection of Reputations, and generate the prizes, bounty, point achievements to be shared among peers curators and the creator of the next block(settlement fee). PoA can work standalone or with any other types of blockchain consensus, being itself a layer of better achievment of a Smart Contract Settlement.
+The punitive Proof-of-Adequacy is a type of algorithm layer by which a cryptocurrency blockchain network aims to use distributed consensus to achieve a better result on a **settelment** dispute. In PoA-based cryptocurrencies there are two level of peers, where PoA act choosing one the P2P curators(**Reviewers**) of a contestation via various combinations of random selection of Reputations, and generate the prizes, bounty, point achievements to be shared among peers curators and the creator, known as **Witness**, of the next block(settlement fee). PoA can work standalone or with any other types of blockchain consensus, being itself a layer of better achievment of a Smart Contract Settlement.
 
 A content to be reviewed by third party must have a trustfull result, and for that the content have to be reviewed by a odd `n` of **Reviewers**(_R_). To ensure a review was trustfull, the application needs to give the benefit ouf doubt of what has been reviewed, and this doubt it's granted by the 3 external, actors of the process. They are the **Issuer**(_I_), the Reporter(_r_) and the content creator(_cc_).
 When a _r_ reports a _cc_ , the _I_ sends to the network the content to be reviewed(_r_) . The system take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
