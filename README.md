@@ -20,7 +20,7 @@ A **settelment** dispute must have a trustfull result, and for that, a **settelm
 
 ### Process
 
-When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. The system take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
+When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. The system will take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
 
 - Position on the assignment pool
 - Reputation
@@ -55,9 +55,9 @@ A Appeal of the result can be issued.
 
 ### Assignment pool
 
-When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of assignemt. This _P_ it's responsable to queue the assignees to be assign to a next _r_. The quantity of _R_ to be assigned(_A_) will be the minimum of 7, to a maximum of 25.
+When a _R_ request a **settlement** for a review , the algoritm will gets the first [reviewers](#Reviewer) available on the Pool (_P_) of assignemt and ask for a review, then the [reviewers](#Reviewer) it's sent to the end of the _P_. The [reviewers](#Reviewer) will recieve the *settlement* and the _I_ rules and define if the *settlement* it's on favor of the [Reporter](#Reporter). After the [reviewers](#Reviewer) gives it's vote, the algorithm will require for the next assignee [reviewers](#Reviewer) on the _P_, having this [reviewers](#Reviewer) a different level of [Reputation](#Reputation)  This _P_ it's responsable to queue the assignees to be assign to a next _r_. The quantity of _R_ to be assigned(_A_) will be the minimum of 7, to a maximum of 25.
 
-`_A_ = _R_[<_rp_>].slice(0,25)`
+> `_A_ = _R_.get((reviewer) => { return reviewer })`
 
 In order to keep the pool assignment with the must trustfull result as possible, a number of _R_ should be diferenciated, getting the advantage of distribuiting `n` assignees on a single review by a range of experienced _R_ to new one(or still pooly trustable) on the peer network. This range are defined by the _R_ reputation (defined on section [Reputation](#reputation)). To control and maintanin the trustfull of the network the votes will be weight by the assignee reputation, giving the system a controled and better results of the reviews.
 Doing that, the aiming it's to avoid misleaging engagement or vicious behaviour from more experienced peer users, avoid power centralization among the reputation peers, and give a more honest result of the review.
