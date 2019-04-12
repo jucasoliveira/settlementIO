@@ -16,8 +16,6 @@ To create a blockchain based on smart contracts where the content to be reviewed
 
 The punitive Proof-of-Adequacy is a type of algorithm layer by which a cryptocurrency blockchain network aims to use distributed consensus to achieve a result on a **settelment** dispute. In PoA-based cryptocurrencies there are 1-2 level of consensus, where PoA act choosing odd _n_ P2P curators([Reviewers](#33-Reviewer)) of a **settelment** via various combinations of random selection of [Reputations](#Reputation), and also generate the prizes, bounty, point achievements to be shared among peers curators and the creator, known as [Witness](#Witness), of the next block(settlement fee). In able to record on the block, The [Witness](#Witness) can follow another method of consensus. PoA can work standalone, having it's own [Witness](#Witness) Assignment Logic to record the **settlement** result on the block, but it's better described being itself a layer of achievment of a Smart Contract Settlement.
 
-A **settelment** dispute must have a trustfull result, and for that, a **settelment** have to be reviewed by a odd `n` of [Reviewers](#33-Reviewer)(_R_). To ensure a result it's trustfull, the algorithm allow the [benefit ouf doubt](#benefit-of-doubt) of any **settelment** result, and this doubt it's granted to the 3 p2p actors. They are the 2 parts on the dispute, the [Reporter](#Reporter) and the [Appealer](#Appealer), and the law abiding [Issuer](#31-issuer), who defines the [rules](#rules-of-the-settlement) where a **settlement** dispute is going on. The amount of [benefit ouf doubt](#benefit-of-doubt) it's determinated by it's own cryptocurrency blockchain network, but in able to avoid fraud it's recommended to follow the instructions on this paperwork.
-
 ### 1.1 Process
 
 When a [Reporter](#Reporter) file a **settelment** against the [Appealer](#35-appealer) , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. It's from the discrecy of the [_I_](#31-issuer) to notify the Appealer of the **settlement** dispute in course, if don't, it must be send the information.
@@ -112,6 +110,7 @@ A _A_ must have assignees distribuited on the following reputation  : _R_['Trust
 
 
 ### 1.10 Benefit of doubt
+A **settelment** dispute must have a trustfull result, and for that, a **settelment** have to be reviewed by a odd `n` of [Reviewers](#33-Reviewer)(_R_). To ensure a result it's trustfull, the algorithm allow the [benefit ouf doubt](#benefit-of-doubt) of any **settelment** result, and this doubt it's granted to the 3 p2p actors. They are the 2 parts on the dispute, the [Reporter](#Reporter) and the [Appealer](#Appealer), and the law abiding [Issuer](#31-issuer), who defines the [rules](#rules-of-the-settlement) where a **settlement** dispute is going on. The amount of [benefit ouf doubt](#benefit-of-doubt) it's determinated by it's own cryptocurrency blockchain network, but in able to avoid fraud it's recommended to follow the instructions on this paperwork.
 
 
 ## 2. Rules of the settlement
