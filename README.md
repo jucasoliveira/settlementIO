@@ -20,7 +20,7 @@ A **settelment** dispute must have a trustfull result, and for that, a **settelm
 
 ### 1.1 Process
 
-When a [Reporter](#Reporter) file a **settelment** against the [Appealer](#Appealer) , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. It's from the discrecy of the [_I_](#31-issuer) to notify the Appealer of the **settlement** dispute in course, if don't, it must be send the information.
+When a [Reporter](#Reporter) file a **settelment** against the [Appealer](#35-appealer) , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. It's from the discrecy of the [_I_](#31-issuer) to notify the Appealer of the **settlement** dispute in course, if don't, it must be send the information.
 eg.: 
 ```javascript
 settlementIssued = {
