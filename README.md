@@ -26,9 +26,9 @@ When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to 
 - Reputation
 - Waiting time
 
-After the designation, the content recieve a feedback of the _n_ assigned peer _R_, and the final result it's settled. The Result then it's sent back to PoA algorithm to record the result on a blockchain. 
+After the designation, the content recieve a feedback of the _n_ assigned peer _R_, and the final [result](#Result) it's settled. The [Result](#Result) then it's sent back to PoA algorithm to record it on a blockchain. 
 
-The PoA send a data to a [pool of results](#pool-of-results), to be recorded on a blockchain. The data must contain the result of the settlement, the price distribution among the winners of the voting settlement added 60% of the bounty isued and reduced by the [Witness](#Witness) fee, if there is any, and finally the fee attached to 40% fo a bounty isued, if there is any.
+The PoA send a data to a [pool of results](#pool-of-results), to be recorded on a blockchain. The data must contain the [Result](#Result) of the settlement, the price distribution among the winners of the voting settlement added 60% of the [bounty](#Bounty) issued and reduced by the [Witness](#Witness) fee `G = pd + (b*(60/100)) - wf`, if there is any, and finally the fee attached to 40% fo a bounty isued `WP = wf + (b*(40/100)) `, if there is any.
 
 A [Witness](#Witness) it's assigned to write the result on the blockchain, 
 
