@@ -10,29 +10,7 @@ So, in order to take content review to a new level , a new approach for this iss
 
 ## Goal
 
-To create a blockchain notary book where the content to be reviewed will be issued, reviewed and the result recorded , using digital signature and third party reviewers.
-
-
-## Actors
-
-### Chain
-
-### Issuer
-A company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for that content.
-
-### Reviewer 
-The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result, the distribution of the review it's held by the **Witness**, who assign the review on the pool and check the  **Reviewer** `poor-of-integrity`, based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
-
-### Witness
-The **Witness** it's the algorithm(miner) which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputation`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the **Chain**, working as a notarybook for consultation by the **Issuer**. Therefore the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly. A **Witness** node who insert the **Review** first it's granted the fee charged from the **Issuer**. The **Issuer** can be a **Witness** for the chain.
-
-### Appealling
-users/reporters can appeal te result of the review and a new request are issued. `n` appeals can be granted by review, defined by the **Issuer**
-
-
-
-## Security measurement
-How to secure the block
+To create a blockchain based on smart contracts where the content to be reviewed will be issued, reviewed and the result recorded , using digital signature and third party reviewers. To achieve this Goal , the contentIO will use a consensus algorithm called `Punitive Proof-of-Adequacy`
 
 ## Punitive Proof-of-Adequacy
 
@@ -80,6 +58,28 @@ A _A_ must have assignees distribuited on the following reputation  : _R_['Trust
 
 
 ### Benefit of doubt and Single source of truth
+
+
+## Actors
+
+### Chain
+
+### Issuer
+A company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for that content.
+
+### Reviewer 
+The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result, the distribution of the review it's held by the **Witness**, who assign the review on the pool and check the  **Reviewer** `poor-of-integrity`, based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
+
+### Witness
+The **Witness** it's the algorithm(miner) which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputation`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the **Chain**, working as a notarybook for consultation by the **Issuer**. Therefore the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly. A **Witness** node who insert the **Review** first it's granted the fee charged from the **Issuer**. The **Issuer** can be a **Witness** for the chain.
+
+### Appealling
+users/reporters can appeal te result of the review and a new request are issued. `n` appeals can be granted by review, defined by the **Issuer**
+
+
+
+## Security measurement
+How to secure the block
 
 
 ## Pros
