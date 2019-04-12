@@ -95,8 +95,6 @@ The Rules of the settlement it's defined by the [Issuer](#Issuer), so the PoA de
 
 ## Actors
 
-### Chain
-
 ### Issuer
 A company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for that content.
 
