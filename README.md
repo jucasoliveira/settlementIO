@@ -80,6 +80,8 @@ A _A_ must have assignees distribuited on the following reputation  : _R_['Trust
 ### Issuer
 A company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for that content.
 
+### Reporter
+
 ### Reviewer 
 The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result, the distribution of the review it's held by the **Witness**, who assign the review on the pool and check the  **Reviewer** `poor-of-integrity`, based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
 
