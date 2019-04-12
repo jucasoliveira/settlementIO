@@ -16,11 +16,20 @@ To create a blockchain based on smart contracts where the content to be reviewed
 
 The punitive Proof-of-Adequacy is a type of algorithm layer by which a cryptocurrency blockchain network aims to use distributed consensus to achieve a result on a **settelment** dispute. In PoA-based cryptocurrencies there are 1-2 level of consensus, where PoA act choosing odd _n_ P2P curators([Reviewers](#33-Reviewer)) of a **settelment** via various combinations of random selection of [Reputations](#Reputation), and also generate the prizes, bounty, point achievements to be shared among peers curators and the creator, known as [Witness](#Witness), of the next block(settlement fee). In able to record on the block The [Witness](#Witness) can follow another method of consensus. PoA can work standalone, having it's own [Witness](#Witness) Assignment Logic, but it's better described being itself a layer of achievment of a Smart Contract Settlement.
 
-A **settelment** dispute must have a trustfull result, and for that, a **settelment** have to be reviewed by a odd `n` of [Reviewers](#33-Reviewer)(_R_). To ensure a result was trustfull, the algorithm allow the [benefit ouf doubt](#benefit-of-doubt) of any **settelment** result, and this doubt it's granted by the 3 p2p actors. They are the 2 parts on the dispute, the [Reporter](#Reporter) and the [Appealer](#Appealer), and the law abiding [Issuer](#Issuer), who defines the [rules](#rules-of-the-settlement) where a **settlement** dispute is going on. The amount of [benefit ouf doubt](#benefit-of-doubt) it's determinated by it's own cryptocurrency blockchain network, but in able to avoid fraud it's recommended to follow the instructions on this paperwork.
+A **settelment** dispute must have a trustfull result, and for that, a **settelment** have to be reviewed by a odd `n` of [Reviewers](#33-Reviewer)(_R_). To ensure a result was trustfull, the algorithm allow the [benefit ouf doubt](#benefit-of-doubt) of any **settelment** result, and this doubt it's granted by the 3 p2p actors. They are the 2 parts on the dispute, the [Reporter](#Reporter) and the [Appealer](#Appealer), and the law abiding [Issuer](#31-issuer), who defines the [rules](#rules-of-the-settlement) where a **settlement** dispute is going on. The amount of [benefit ouf doubt](#benefit-of-doubt) it's determinated by it's own cryptocurrency blockchain network, but in able to avoid fraud it's recommended to follow the instructions on this paperwork.
 
 ### 1.1 Process
 
-When a [Reporter](#Reporter) file a **settelment** against the [Appealer](#Appealer) , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. The system will take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
+When a [Reporter](#Reporter) file a **settelment** against the [Appealer](#Appealer) , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. It's from the discrecy of the [_I_](#31-issuer) to notify the Appealer of the **settlement** dispute in course, if don't, it must be send the information.
+eg.: 
+```javascript
+settlementIssued = {
+    data : `<SETTLEMENT PROCESS>`,
+    reporter: 4A12FE7C3773A2B801BFFEB341A77949,
+    appealer : 39AAF3FEF253178E15963B9CC27DA138
+}
+```
+The system will take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
 
 - Position on the assignment pool
 - Reputation
@@ -107,7 +116,7 @@ The first `n` users connected to the platform who selfAssign the review lock the
 The **Witness** it's the algorithm(miner) which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputation`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the **Chain**, working as a notarybook for consultation by the **Issuer**. Therefore the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly. A **Witness** node who insert the **Review** first it's granted the fee charged from the **Issuer**. The **Issuer** can be a **Witness** for the chain.
 
 ### 3.5 Appealer
-users/reporters can appeal te result of the review and a new request are issued. `n` appeals can be granted by review, defined by default of by the **Issuer**
+Users/reporters who have a **settlement** result against their will, can appeal te result of the review and a new request are issued. _n_ appeals can be granted by **settlement** , defined by default of by the **Issuer**. It's from the discrecy of the _I_ to notify the Appealer of the **settlement** dispute in course, but the Appealer must be notified after the result. And the _I_ must inform the network if the Appealer were notified when the **settlement** dispute were post in course
 
 
 
