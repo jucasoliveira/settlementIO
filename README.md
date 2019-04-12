@@ -66,7 +66,9 @@ A Appeal of the [Result](#Result) can be issued and restart the process , genera
 
 If the result it's the same, the **settlement** it's closed and It can't be Appealed again(appealFowardResult). 
 
-If the Appeal it's giving a different result, but the algorithm request a another appeal proccess to be retrieve the result of the Issuer. Depending of the result, it's fires the punitive algorithm which will reduce the **Reputation** and a charge fee to be deducted of the loosing peer reviewers, adding the carge on the prize of the next **settlement** dispute of the Issuer(appealBlockingResult). The reviewers charged can't appeal, as they aren't one of the 3 p2p actors with this level of permission.
+If the Appeal it's giving a different result, but the algorithm request a another appeal proccess to be retrieve the result of the Issuer. Depending of the result, it's fires the punitive algorithm which will reduce the **Reputation** and a charge fee to be deducted of the loosing peer reviewers, adding the carge on the prize of the next **settlement** dispute of the Issuer(appealBlockingResult). 
+
+The reviewers charged can't appeal, as they aren't one of the 3 p2p actors with this level of permission.
 
 ```javascript
 
