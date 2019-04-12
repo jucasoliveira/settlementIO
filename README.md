@@ -30,8 +30,8 @@ After the designation, the content recieve a feedback of the _n_ assigned peer _
 
 The PoA send a data to a [pool of results](#pool-of-results), to be recorded on a blockchain. The data must contain: 
 - The Review reference/data [Result](#Result) of the settlement 
-- The price distribution among the winners of the voting settlement added 60% of the [bounty](#Bounty) issued and reduced by the [Witness](#Witness) fee ```javascript G = pd + (b? b*(60/100) : 0) - wf````, if there is any.
-- The Witness Total settlement fee attached to 40% fo a [bounty](#Bounty) isued ```javascriptSF = wf + (b? b*(40/100): 0) ```, if there is any, 
+- The price distribution among the winners of the voting settlement added 60% of the [bounty](#Bounty) issued and reduced by the [Witness](#Witness) fee `G = pd + (b? b*(60/100) : 0) - wf`, if there is any.
+- The Witness Total settlement fee attached to 40% fo a [bounty](#Bounty) isued `SF = wf + (b? b*(40/100): 0) `, if there is any, 
 - The hash of all [reviewers](#Reviewer) which was on the settlement 
 - The hash of the writing witness.
 
