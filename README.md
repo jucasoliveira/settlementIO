@@ -13,7 +13,7 @@ So, in order to take content review to a new level , a new approach for this iss
 To create a blockchain notary book where the content to be reviewed will be issued, reviewed and the result recorded , using digital signature and third party reviewers.
 
 
-## Process
+## Actors
 
 1. The **Chain** : 
 
