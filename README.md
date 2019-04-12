@@ -20,7 +20,7 @@ A **settelment** dispute must have a trustfull result, and for that, a **settelm
 
 ### 1.1 Process
 
-When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. The system will take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
+When a [Reporter](#Reporter) file a **settelment** against the [Appealer](#Appealer) , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. The system will take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
 
 - Position on the assignment pool
 - Reputation
