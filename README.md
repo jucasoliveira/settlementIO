@@ -30,7 +30,7 @@ After the designation, the content recieve a feedback of the _n_ assigned peer _
 
 The PoA send a data to a [pool of results](#pool-of-results), to be recorded on a blockchain. The data must contain the [Result](#Result) of the settlement, the price distribution among the winners of the voting settlement added 60% of the [bounty](#Bounty) issued and reduced by the [Witness](#Witness) fee `G = pd + (b*(60/100)) - wf`, if there is any, and finally the fee attached to 40% fo a bounty isued `WP = wf + (b*(40/100)) `, if there is any.
 
-> ps.: G is the total Grant of the [Result](#Result), pd = price distribution, b = bounty , WP = [Witness](#Witness) total price, wf = [Witness](#Witness) fee
+> G is the total Grant of the [Result](#Result), pd = price distribution, b = bounty , WP = [Witness](#Witness) total price, wf = [Witness](#Witness) fee
 
 A [Witness](#Witness) it's assigned to write the result on the blockchain, 
 
