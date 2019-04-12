@@ -60,12 +60,30 @@ settlementResult : {
 A [Witness](#Witness) it's assigned to generate a block on the blockchain via PoS, PoW or the [Witness](#Witness) Assignment Logic. Then it will take _n_ data from the [pool of results](#pool-of-results) and record it on the blockchain
 
 ### 1.2 Apeal
-A Appeal of the [Result](#Result) can be issued and restart the process , generating a new data to be recorded on the block referring the hash of the last [Result](#Result). If the result it's the same, the **settlement** it's closed and It can't be Appealed again(only by the Issuer). If the Appeal it's giving a different result, the algorithm fires the Issuer, to give it's result. Depending of the result, it's fires the punitive algorithm which will reduce the **Reputation** and a charge fee to be deducted of the loosing peer reviewers, adding the carge on the prize of the next **settlement** dispute of the Issuer. The reviewers charged can't appeal, as they aren't one of the 3 p2p actors
+A Appeal of the [Result](#Result) can be issued and restart the process , generating a new data to be recorded on the block referring the hash of the last [Result](#Result). 
+
+If the result it's the same, the **settlement** it's closed and It can't be Appealed again(appealFowardResult). 
+
+If the Appeal it's giving a different result, but the algorithm request a another appeal proccess to be retrieve the result of the Issuer. Depending of the result, it's fires the punitive algorithm which will reduce the **Reputation** and a charge fee to be deducted of the loosing peer reviewers, adding the carge on the prize of the next **settlement** dispute of the Issuer(appealBlockingResult). The reviewers charged can't appeal, as they aren't one of the 3 p2p actors
 
 ```javascript
 
-appealResult : {
+appealFowardResult : {
   LR: `F56146D752AA1B96CB455B59FC017FD9`
+  RR: '4A12FE7C3773A2B801BFFEB341A77949',
+  G : `${pd + (b*(60/100)) - wf)}`,
+  SF : `${wf + (b*(40/100))}`
+  RW : ['CC54BD37BED550B4F756284A9FF42B4E', '79E9BBAE4E3C33C4EC16E1CCB303EE0B', 'CD47C54AFED2B25F833610FDB8875908', '0AFB3728EC8AEB70B2B13FB1B6E714E2', '39AAF3FEF253178E15963B9CC27DA138', '92238FEAF3A982CF7D42D6C8FB52D804', '688A044D54361D5762100BD1E6559AF4'],
+  W: 'F56146D752AA1B96CB455B59FC017FD9'
+}
+
+```
+
+```javascript
+
+appealBlockingResult : {
+  WR: '39AAF3FEF253178E15963B9CC27DA138'
+  LR: 'F56146D752AA1B96CB455B59FC017FD9'
   RR: '4A12FE7C3773A2B801BFFEB341A77949',
   G : `${pd + (b*(60/100)) - wf)}`,
   SF : `${wf + (b*(40/100))}`
