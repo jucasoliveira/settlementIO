@@ -26,9 +26,9 @@ When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to 
 - Reputation
 - Waiting time
 
-After the designation, the content recieve a feedback of the _n_ assigned peer _R_, and the final result it's settled. The Result then it's sent to be recorded on a blockchain. 
+After the designation, the content recieve a feedback of the _n_ assigned peer _R_, and the final result it's settled. The Result then it's sent back to PoA algorithm to record the result on a blockchain. 
 
-The PoA send a data to a pool of results, to be recorded on a blockchain. The data must contain the result of the settlement, the price distribution among the winners of the voting settlement added 60% of the bounty isued and reduced by the [Witness](#Witness) fee, if there is any, and finally the fee attached to 40% fo a bounty isued, if there is any.
+The PoA send a data to a [pool of results](#pool-of-results), to be recorded on a blockchain. The data must contain the result of the settlement, the price distribution among the winners of the voting settlement added 60% of the bounty isued and reduced by the [Witness](#Witness) fee, if there is any, and finally the fee attached to 40% fo a bounty isued, if there is any.
 
 A [Witness](#Witness) it's assigned to write the result on the blockchain, 
 
@@ -49,10 +49,6 @@ A Range of reputation(_rp_) it's given to the _R_ , these are "Trustfull", "MidL
 ### Waiting time 
 The Last Will be First.
 
-
-
-
-
 ### Vote System Weight
 
 A _A_ must have assignees distribuited on the following reputation  : _R_['Trustfull'] = 25% , _R_['MidLevel'] = 30%, _R_['Non-Trustfull'] = 45%. The reputation defines the power of the vote of each assignees. The "Non-Trustfull"(_ntt_) it's the benchmark voter, where "MidLevel" has `1.5*ntt` vote power , and the "Trustfull" _R_ having `2.5*ntt` vote power.
@@ -60,6 +56,7 @@ A _A_ must have assignees distribuited on the following reputation  : _R_['Trust
 
 ### Result
 
+### Pool of Results
 
 ### Appeal
 
