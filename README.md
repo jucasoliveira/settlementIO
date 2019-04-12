@@ -27,8 +27,10 @@ When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to 
 - Waiting time
 
 After the designation, the content recieve a feedback of the assigned peer _R_, and the final result it's settled. The Result then it's sent to be recorded on a blockchain. 
-The PoA send a data to a pool of results, to be recorded on a blockchain. The data must contain the result of the settlement, the price distribution among the winners of the voting settlement with 60% of the bounty isued, if there is any, the fee attached to 40% fo a bounty isued, if there is any.
-A [Witness](#Witness) it's assigned to write the resul on the blockchain, 
+
+The PoA send a data to a pool of results, to be recorded on a blockchain. The data must contain the result of the settlement, the price distribution among the winners of the voting settlement added 60% of the bounty isued and reduced by the [Witness](#Witness) fee, if there is any, and finally the fee attached to 40% fo a bounty isued, if there is any.
+
+A [Witness](#Witness) it's assigned to write the result on the blockchain, 
 
 ### Assignment pool
 
