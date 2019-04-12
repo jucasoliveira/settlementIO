@@ -6,7 +6,7 @@ We can see a lot of users complaining that their content were demonetized, delet
 
 When I started to write this white paper, my main goal was to create a distributed approach that could help companies to expand their review process without having the cost to hire more thousand of workers to review a exponetial amount of data, where in a future will be almost impossible to then to review every content reported.
 
-But , seeing that I could expand this to another areas, I realize this method of consensus I was trying to achieve was creating a new and outsdanding private judgment system.
+But , seeing that I could expand this to another areas, I realize this method of consensus I was trying to achieve was creating a new and private judgment system.
 
 So, in order to take content review, games, and even the Justice System to a new level , a new approach for this issue needs to be approached.
 
