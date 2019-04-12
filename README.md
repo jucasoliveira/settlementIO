@@ -47,7 +47,7 @@ The PoA send a data to a [pool of results](#pool-of-results), to be recorded on 
 
 ```javascript
 
-data : {
+settlementResult : {
   RR: '4A12FE7C3773A2B801BFFEB341A77949',
   G : `${pd + (b*(60/100)) - wf)}`,
   SF : `${wf + (b*(40/100))}`
@@ -66,7 +66,7 @@ A Appeal of the [Result](#Result) can be issued and restart the process , genera
 
 ```javascript
 
-data : {
+appealResult : {
   LR: `F56146D752AA1B96CB455B59FC017FD9`
   RR: '4A12FE7C3773A2B801BFFEB341A77949',
   G : `${pd + (b*(60/100)) - wf)}`,
