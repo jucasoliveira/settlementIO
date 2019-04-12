@@ -37,7 +37,8 @@ The weight of the votes it's referred on the [Vote System Weight](#vote-system-w
 
 A Range of reputation(_rp_) it's given to the _R_ , these are "Trustfull", "MidLevel", "Non-Trustfull" and "Undesirable". When a new _R_ it's created, a "Non-Trustfull" level it's assign to it's status. The more engaged 
  
-### Waiting time (the last will be the first)
+### Waiting time 
+The Last Will be First.
 
 
 
