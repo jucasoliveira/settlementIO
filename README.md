@@ -46,6 +46,8 @@ In order to keep the pool assignment with the must trustfull result as possible,
 Doing that, the aiming it's to avoid misleaging engagement or vicious behaviour from more experienced peer users, avoid power centralization among the reputation peers, and give a more honest result of the review.
 The weight of the votes it's referred on the [Vote System Weight](#vote-system-weight) section.
 
+### Bounty
+
 ### Reputation
 
 A Range of reputation(_rp_) it's given to the _R_ , these are "Trustfull", "MidLevel", "Non-Trustfull" and "Undesirable". When a new _R_ it's created, a "Non-Trustfull" level it's assign to it's status. The more engaged 
