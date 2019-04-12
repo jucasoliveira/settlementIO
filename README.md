@@ -20,7 +20,7 @@ A **settelment** dispute must have a trustfull result, and for that **settelment
 
 ### Process
 
-When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to be reviewed(_r_) . The system take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
+When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. The system take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
 
 - Position on the assignment pool
 - Reputation
@@ -28,7 +28,7 @@ When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to 
 
 After the designation, the content recieve a feedback of the _n_ assigned peer _R_, and the final [result](#Result) it's settled. The [Result](#Result) then it's sent back to PoA algorithm to record it on a blockchain. 
 
-The PoA send a data to a [pool of results](#pool-of-results), to be recorded on a blockchain. The data must contain the Review reference/data [Result](#Result) of the settlement, the price distribution among the winners of the voting settlement added 60% of the [bounty](#Bounty) issued and reduced by the [Witness](#Witness) fee `G = pd + (b*(60/100)) - wf`, if there is any, the Witness Total Price fee attached to 40% fo a bounty isued `SF = wf + (b*(40/100)) `, if there is any, the hash of all reviewers of the dispute, the Hash related [Reviewers](#Reviewer) of the settlement, and the hash of the writing witness.
+The PoA send a data to a [pool of results](#pool-of-results), to be recorded on a blockchain. The data must contain the Review reference/data [Result](#Result) of the settlement, the price distribution among the winners of the voting settlement added 60% of the [bounty](#Bounty) issued and reduced by the [Witness](#Witness) fee `G = pd + (b*(60/100)) - wf`, if there is any, the Witness Total Price fee attached to 40% fo a [bounty](#Bounty) isued `SF = wf + (b*(40/100)) `, if there is any, the hash of all reviewers of the dispute, the Hash related [Reviewers](#Reviewer) of the settlement, and the hash of the writing witness.
 
 ```javascript
 
