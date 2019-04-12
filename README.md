@@ -18,7 +18,7 @@ The punitive Proof-of-Adequacy is a type of algorithm layer by which a cryptocur
 
 A **settelment** dispute must have a trustfull result, and for that, a **settelment** have to be reviewed by a odd `n` of [Reviewers](#Reviewer)(_R_). To ensure a result was trustfull, the algorithm allow the [benefit ouf doubt](#benefit-of-doubt) of any **settelment** result, and this doubt it's granted by the 3 p2p actors. They are the 2 parts on the dispute, the [Reporter](#Reporter) and the [Appealer](#Appealer), and the law abiding [Issuer](#Issuer), who defines the [rules](#rules-of-the-settlement) where a **settlement** dispute is going on. The amount of [benefit ouf doubt](#benefit-of-doubt) it's determinated by it's own cryptocurrency blockchain network, but in able to avoid fraud it's recommended to follow the instructions on this paperwork.
 
-### 1.1Process
+### 1.1 Process
 
 When a _rr_ reports a _cc_ , the _I_ sends to the network the **settelment** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. The system will take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are designated based on the following :
 
@@ -53,14 +53,14 @@ A [Witness](#Witness) it's assigned to generate a block on the blockchain via Po
 
 A Appeal of the result can be issued.
 
-### Assignment pool
+### 1.2 Assignment pool
 
-When a _R_ request a **settlement** for a review , the algoritm will gets the first [reviewer](#Reviewer) available on the Pool (_P_) of assignemt and ask for a review, then the [reviewer](#Reviewer) it's sent to the end of the _P_. The [reviewer](#Reviewer) will recieve the **settlement** and the _I_ rules and define if the **settlement** it's on favor or aginst the [Reporter](#Reporter). After the [reviewer](#Reviewer) gives it's vote, the algorithm will require for the next assignee [reviewers](#Reviewer) on the _P_, having this [reviewer](#Reviewer) a different level of [Reputation](#Reputation)(as seen on [Assignment Ordenation](#assignment-ordenation)). After the minimum of 7 votes, the algorithm checks if the **settlement** have a result, if not it will assing another [reviewer](#Reviewer) until the next odd _n_ of votes and check for the result, having this behaviour untill _n_ of votes it's 25.   
+When a _R_ request a **settlement** for a review , the algoritm will gets the first [reviewer](#Reviewer) available on the Pool (_P_) of assignemt and ask for a review, then the [reviewer](#Reviewer) it's sent to the end of the _P_. The [reviewer](#Reviewer) will recieve the **settlement** and the _I_ rules and define if the **settlement** it's on favor or aginst the [Reporter](#Reporter). After the [reviewer](#Reviewer) gives it's vote, the algorithm will require for the next assignee [reviewers](#Reviewer) on the _P_, having this [reviewer](#Reviewer) a different level of [Reputation](#Reputation)(as seen on [Assignment Ordenation](#121assignment-ordenation)). After the minimum of 7 votes, the algorithm checks if the **settlement** have a result, if not it will assing another [reviewer](#Reviewer) until the next odd _n_ of votes and check for the result, having this behaviour untill _n_ of votes it's 25.   
 This _P_ it's responsable to queue the assignees to be assign to a next **settlement**. The quantity of _R_ to be assigned(_A_) will be the minimum of 7, to a maximum of 25.
 
 > `_A_ = _R_.get((reviewer) => { return reviewer })`
 
-#### Assignment Ordenation
+#### 1.2.1 Assignment Ordenation
 In order to keep the pool assignment with the must trustfull result as possible, a number of _R_ should be diferenciated, getting the advantage of distribuiting _n_ assignees on a single review by a range of experienced _R_ to new one(or still pooly trustable) on the peer network. This range are defined by the _R_ reputation (defined on section [Reputation](#reputation)). To control and maintanin the trustfull of the network the votes will be weight by the assignee reputation, giving the system a controled and better results of the reviews.
 Doing that, the aiming it's to avoid misleaging engagement or vicious behaviour from more experienced peer users, avoid power centralization among the reputation peers, and give a more honest result of the review.
 The weight of the votes it's referred on the [Vote System Weight](#vote-system-weight) section.
