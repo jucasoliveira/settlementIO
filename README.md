@@ -85,7 +85,7 @@ This _P_ it's responsable to queue the assignees to be assign to a next **settle
 
 > `_A_ = _R_.get((reviewer) => { return reviewer })`
 
-#### 1.3.1 Assignment Ordenation
+#### 1.3.1 Assignment Ordination
 In order to keep the pool assignment with the must trustfull result as possible, the [Reputation](#14-reputation) of _n_ _R_ should be diferenciated, getting the advantage of distribuiting _n_ assignees on a single review by a range of experienced _R_ to new one(or still pooly trustable) on the peer network. This range are defined by the _R_ reputation (defined on section [Reputation](#reputation)). To control and maintanin the trustfull of the network the votes will be weight by the assignee reputation, giving the system a controled and better results of the reviews.
 Doing that, the aiming it's to avoid misleaging engagement or vicious behaviour from more experienced peer users, avoid power centralization among the reputation peers, and give a more honest result of the review.
 The weight of the votes it's referred on the [Vote System Weight](#vote-system-weight) section.
