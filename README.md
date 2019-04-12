@@ -30,19 +30,6 @@ The **Witness** it's the algorithm(miner) which will hold the distribution of th
 users/reporters can appeal te result of the review and a new request are issued. `n` appeals can be granted by review, defined by the **Issuer**
 
 
-## Pros
-Companys can use the platform where the pool of nodes to be reviewed can give more returns for the content **Reviewers**
-Platform can be `onPrem` or `onCloud`.
-**Reviews** can be more reliable.
-
-## Cons
-
-Who review the **Reviewer**
-
-Develop how the platform will recieve the content from the **Issuer** and deliver it to the **Reviewer**
-
-Define how a appeal must be accepeted by a **Reviewer**. A `punitive proof-of-adequacy` must be implemented in full to enforce the need of the reviewer be trustfull on his/her review(also can work for managing the user behaviour)
-
 
 ## Security measurement
 How to secure the block
@@ -93,3 +80,19 @@ A _A_ must have assignees distribuited on the following reputation  : _R_['Trust
 
 
 ### Benefit of doubt and Single source of truth
+
+
+## Pros
+Companys can use the platform where the pool of nodes to be reviewed can give more returns for the content **Reviewers**
+Platform can be `onPrem` or `onCloud`.
+**Reviews** can be more reliable.
+
+## Cons
+
+Who review the **Reviewer**
+
+Develop how the platform will recieve the content from the **Issuer** and deliver it to the **Reviewer**
+
+Define how a appeal must be accepeted by a **Reviewer**. A `punitive proof-of-adequacy` must be implemented in full to enforce the need of the reviewer be trustfull on his/her review(also can work for managing the user behaviour)
+
+
