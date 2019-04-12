@@ -65,35 +65,33 @@ In order to keep the pool assignment with the must trustfull result as possible,
 Doing that, the aiming it's to avoid misleaging engagement or vicious behaviour from more experienced peer users, avoid power centralization among the reputation peers, and give a more honest result of the review.
 The weight of the votes it's referred on the [Vote System Weight](#vote-system-weight) section.
 
-### Bounty
+### 1.3 Bounty
 
-### Reputation
+### 1.4 Reputation
 
 A Range of reputation(_rp_) it's given to the _R_ , these are "Trustfull", "MidLevel", "Non-Trustfull" and "Undesirable". When a new _R_ it's created, a "Non-Trustfull" level it's assign to it's status. The more engaged 
  
-### Waiting time 
+### 1.5 Waiting time 
 The Last Will be First.
 
-### Vote System Weight
+### 1.6 Vote System Weight
 
 A _A_ must have assignees distribuited on the following reputation  : _R_['Trustfull'] = 25% , _R_['MidLevel'] = 30%, _R_['Non-Trustfull'] = 45%. The reputation defines the power of the vote of each assignees. The "Non-Trustfull"(_ntt_) it's the benchmark voter, where "MidLevel" has `1.5*ntt` vote power , and the "Trustfull" _R_ having `2.5*ntt` vote power.
 
 
-### Result
+### 1.7 Result
 
-### Pool of Results
+### 1.8 Pool of Results
 
-### Appeal
-
-
-### Reputation gratifications/punishment
+### 1.9 Reputation gratifications/punishment
 
 
-### Benefit of doubt
+### 1.10 Benefit of doubt
+
 
 ## 2. Rules of the settlement
 
-The Rules of the settlement it's defined by the [Issuer](#Issuer), so the PoA defines this actor the single source of truth when a [Appeal](#Appeal) it's on.
+The Rules of the settlement it's defined by the [Issuer](#Issuer), so the PoA defines this actor the single source of truth when a [Benefit of doubt](#110-benefit-of-doubt) it's on.
 
 ## 3. Actors
 
