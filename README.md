@@ -55,7 +55,7 @@ A Appeal of the result can be issued.
 
 ### 1.2 Assignment pool
 
-When a _R_ request a **settlement** for a review , the algoritm will gets the first [reviewer](#Reviewer) available on the Pool (_P_) of assignemt and ask for a review, then the [reviewer](#Reviewer) it's sent to the end of the _P_. The [reviewer](#Reviewer) will recieve the **settlement** and the _I_ rules and define if the **settlement** it's on favor or aginst the [Reporter](#Reporter). After the [reviewer](#Reviewer) gives it's vote, the algorithm will require for the next assignee [reviewers](#Reviewer) on the _P_, having this [reviewer](#Reviewer) a different level of [Reputation](#Reputation)(as seen on [Assignment Ordenation](#121assignment-ordenation)). After the minimum of 7 votes, the algorithm checks if the **settlement** have a result, if not it will assing another [reviewer](#Reviewer) until the next odd _n_ of votes and check for the result, having this behaviour untill _n_ of votes it's 25.   
+When a _R_ request a **settlement** for a review , the algoritm will gets the first [reviewer](#Reviewer) available on the Pool (_P_) of assignemt and ask for a review, then the [reviewer](#Reviewer) it's sent to the end of the _P_. The [reviewer](#Reviewer) will recieve the **settlement** and the _I_ rules and define if the **settlement** it's on favor or aginst the [Reporter](#Reporter). After the [reviewer](#Reviewer) gives it's vote, the algorithm will require for the next assignee [reviewers](#Reviewer) on the _P_, having this [reviewer](#Reviewer) a different level of [Reputation](#Reputation)(as seen on [Assignment Ordenation](#121-assignment-ordenation)). After the minimum of 7 votes, the algorithm checks if the **settlement** have a result, if not it will assing another [reviewer](#Reviewer) until the next odd _n_ of votes and check for the result, having this behaviour untill _n_ of votes it's 25.   
 This _P_ it's responsable to queue the assignees to be assign to a next **settlement**. The quantity of _R_ to be assigned(_A_) will be the minimum of 7, to a maximum of 25.
 
 > `_A_ = _R_.get((reviewer) => { return reviewer })`
@@ -91,38 +91,38 @@ A _A_ must have assignees distribuited on the following reputation  : _R_['Trust
 
 ### Benefit of doubt
 
-## Rules of the settlement
+## 2. Rules of the settlement
 
 The Rules of the settlement it's defined by the [Issuer](#Issuer), so the PoA defines this actor the single source of truth when a [Appeal](#Appeal) it's on.
 
-## Actors
+## 3. Actors
 
-### Issuer
+### 3.1 Issuer
 A company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for that content.
 
-### Reporter
+### 3.2 Reporter
 
-### Reviewer 
+### 3.3 Reviewer 
 The first `n` users connected to the platform who selfAssign the review lock the analisis of that content and give their result, the distribution of the review it's held by the **Witness**, who assign the review on the pool and check the  **Reviewer** `poor-of-integrity`, based on the issuer internal policies. The users can't know each others , so that the system works a non-trustfull nodes.
 
-### Witness
+### 3.4 Witness
 The **Witness** it's the algorithm(miner) which will hold the distribution of the **Issuer** content for review trough the **Reviewers** , defined by `location` , `reputation`, `proof-of-stake`. Once the **Reviews** are issued, **Witness** algorithms take the reviewers result, and record the content result on the **Chain**, working as a notarybook for consultation by the **Issuer**. Therefore the prize value are divided between the **Reviewers** and credit on their account, which will be paid montlhy/weekly. A **Witness** node who insert the **Review** first it's granted the fee charged from the **Issuer**. The **Issuer** can be a **Witness** for the chain.
 
-### Appealer
+### 3.5 Appealer
 users/reporters can appeal te result of the review and a new request are issued. `n` appeals can be granted by review, defined by default of by the **Issuer**
 
 
 
-## Security measurement
+## 4. Security measurement
 How to secure the block
 
 
-## Pros
+## 5. Pros
 Companys can use the platform where the pool of nodes to be reviewed can give more returns for the content **Reviewers**
 Platform can be `onPrem` or `onCloud`.
 **Reviews** can be more reliable.
 
-## Cons
+## 6. Cons
 
 Who review the **Reviewer**
 
