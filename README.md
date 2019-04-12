@@ -56,12 +56,13 @@ When a _r_ reports a _cc_ , the _I_ sends to the network the content to be revie
 
 ### Assignment pool
 
-When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of assignemt. This _P_ it's responsable to queue the assignees to be assign to a next _r_. The quantity of _R_ to be assigned(_A_) will be the maximium of 25.
+When a _R_ request a assignment for a review , it gets itself in a Pool (_P_) of assignemt. This _P_ it's responsable to queue the assignees to be assign to a next _r_. The quantity of _R_ to be assigned(_A_) will be the minimum of 7, to a maximum of 25.
 
 `_A_ = _R_[<_rp_>].slice(0,25)`
 
-In order to keep the pool assignment with the must trustfull result as possible, a number of the classified _R_ should be diferenciated, getting the advantage of distribuiting the n assignees on a single review by a range of experienced _R_ to new users to the peer network or non trustfull users. To control and maintanin the trustfull of the network the votes will be weight by the assignee reputation, giving the system a controled and better results of the reviews.
+In order to keep the pool assignment with the must trustfull result as possible, a number of _R_ should be diferenciated, getting the advantage of distribuiting `n` assignees on a single review by a range of experienced _R_ to new one(or still pooly trustable) on the peer network. This range are defined by the _R_ reputation (defined on section *Reputation*). To control and maintanin the trustfull of the network the votes will be weight by the assignee reputation, giving the system a controled and better results of the reviews.
 Doing that, the aiming it's to avoid misleaging engagement or vicious behaviour from more experienced peer users, avoid power centralization among the reputation peers, and give a more honest result of the review.
+The weight of the votes it's referred on the *Vote System Weight* seccion
 
 ### Reputation
 
@@ -73,7 +74,7 @@ A Range of reputation(_rp_) it's given to the _R_ , these are "Trustfull", "MidL
 
 
 
-### Vote System
+### Vote System Weight
 
 A _A_ must have assignees distribuited on the following reputation  : _R_['Trustfull'] = 25% , _R_['MidLevel'] = 30%, _R_['Non-Trustfull'] = 45%. The reputation defines the power of the vote of each assignees. The "Non-Trustfull"(_ntt_) it's the benchmark voter, where "MidLevel" has `1.5*ntt` vote power , and the "Trustfull" _R_ having `2.5*ntt` vote power.
 
