@@ -59,12 +59,12 @@ settlementResult : {
 
 A [Witness](#Witness) it's assigned to generate a block on the blockchain via PoS, PoW or the [Witness](#Witness) Assignment Logic. Then it will take _n_ data from the [pool of results](#pool-of-results) and record it on the blockchain
 
-### 1.2 Apeal
+### 1.2 Appeal
 A Appeal of the [Result](#Result) can be issued and restart the process , generating a new data to be recorded on the block referring the hash of the last [Result](#Result). 
 
 If the result it's the same, the **settlement** it's closed and It can't be Appealed again(appealFowardResult). 
 
-If the Appeal it's giving a different result, but the algorithm request a another appeal proccess to be retrieve the result of the Issuer. Depending of the result, it's fires the punitive algorithm which will reduce the **Reputation** and a charge fee to be deducted of the loosing peer reviewers, adding the carge on the prize of the next **settlement** dispute of the Issuer(appealBlockingResult). The reviewers charged can't appeal, as they aren't one of the 3 p2p actors
+If the Appeal it's giving a different result, but the algorithm request a another appeal proccess to be retrieve the result of the Issuer. Depending of the result, it's fires the punitive algorithm which will reduce the **Reputation** and a charge fee to be deducted of the loosing peer reviewers, adding the carge on the prize of the next **settlement** dispute of the Issuer(appealBlockingResult). The reviewers charged can't appeal, as they aren't one of the 3 p2p actors with this level of permission.
 
 ```javascript
 
