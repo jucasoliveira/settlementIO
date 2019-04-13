@@ -162,7 +162,7 @@ Users/reporters who have a **settlement** result against their will, can appeal 
 ## 4 Witness Assignment Logic , or : DAG2D, Blockchain at scale
 
 
-As the blockchain technology growths, more need to develop new ideas are nescessary. We then create a 2 dimensional blockchain
+As the blockchain technology growths, more need to develop new ideas are nescessary. The current solutions to solve the scalability of a blockchain relied on a unique linea block. But that's not the only way a blockchain can grow. Trying to achieve a higher level of scalability, i've decided to create a new approach , i've decided to create a blockchain ledger which can achieve a bi-dimentional chain of transactions.
 
 The 2 dimensional blockchain consists in :
 
