@@ -166,7 +166,7 @@ As the blockchain technology growths, more need to develop new ideas are nescess
 
 The 2 dimensional blockchain consists in :
 
-1. generate a Directed Acyclic Graph, as the parent node , this parent node will hold the previous block number, the previous child node block generated, the Witness which generated it and the hash power (or mining power). The genesis block would have the representation like :
+1. generate a Directed Acyclic Graph, as the parent node , this parent node will hold the previous block number, the previous child node block generated, the previous Witness which generated it parent block  and the hash power (or mining power). The genesis block would have the representation like :
 
 ```javascript
 {
