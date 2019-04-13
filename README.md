@@ -2,17 +2,18 @@
 Creating and trustfull judgment system
 
 As social media grow, the content inserted on that surpass millions of billions of data, and unfortunatelly the review of their contents are debatable, even the companies holding the rules of the content review.
-We can see a lot of users complaining that their content were demonetized, deleted or their account blocked on various social medias. At the same time, news websites, blogs and others websites which have commentary section have a hard time to review and block texts that have hate speech, unadiviced/missleading context, etc.
+We can see a lot of users complaining that their content were demonetized, deleted or their account blocked on various social medias. At the same time, news websites, blogs and others websites which have commentary section have a hard time to review and block texts that have hate speech, unadiviced/missleading context, etc. The system is flawed, and the ecosystem of the growing internet can't hold old ways to solve a dispute.
+When we expand this vision, we can see that not only social media, but any system that rely on dispute decisions based on a certain rules , for example any judgment system, not only the problem with the decisions made but the time consumed to have it decisions and the acceptance or not of the person to be under certain rules. 
 
 When I started to write this white paper, my main goal was to create a distributed approach that could help companies to expand their review process without having the cost to hire more thousand of workers to review a exponetial amount of data, where in a future will be almost impossible to them to review every content reported.
 
 But , seeing that I could expand this to another areas, I realize this method of consensus I was trying to achieve was creating a new and private judgment system.
 
-So, in order to take content review, games, and even the Justice System to a new level , a new approach for this issue needs to be approached.
+So, in order to take content review, games, and even the Justice to a new level , a new approach for this issue needs to be approached.
 
 ## Goal
 
-The goal of contentIO it's to create a blockchain based on smart contracts where the content to be reviewed will be issued, reviewed and the result recorded , using digital signature and third party reviewers. To achieve this Goal , the contentIO will use a consensus algorithm called `Punitive Proof-of-Adequacy`
+The goal of settlementIO it's to define a Level 2 settlement algorithm and , with the aproach of a new type of blockchain, be able to create a Cryptocurrency based on smart contracts where the content to be reviewed will be issued, reviewed and the result recorded , using digital signature, third party reviewers and law abid owners. To achieve this Goal , the contentIO will use a consensus algorithm called `Punitive Proof-of-Adequacy`
 
 ## 1. Punitive Proof-of-Adequacy
 
