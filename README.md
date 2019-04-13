@@ -1,4 +1,4 @@
-# contentIO
+# settlementIO
 Creating and trustfull judgment system
 
 As social media grow, the content inserted on that surpass millions of billions of data, and unfortunatelly the review of their contents are debatable, even the companies holding the rules of the content review.
