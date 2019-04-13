@@ -13,7 +13,7 @@ So, in order to take content review, games, and even the Justice to a new level 
 
 ## Goal
 
-The goal of settlementIO it's to define a Level 2 settlement algorithm and , with the aproach of a new type of blockchain, be able to create a Cryptocurrency based on smart contracts where the content to be reviewed will be issued, reviewed and the result recorded , using digital signature, third party reviewers and law abid owners. To achieve this Goal , the contentIO will use a consensus algorithm called `Punitive Proof-of-Adequacy`
+The goal of settlementIO it's to define a Level 2 settlement algorithm and , with the aproach of a new type of blockchain and Level 1 consensus, be able to create a Cryptocurrency based on smart contracts where the content to be reviewed will be issued, reviewed and the result recorded , using digital signature, third party reviewers and law abid owners. To achieve this Goal , the contentIO will use a consensus algorithm called `Punitive Proof-of-Adequacy`
 
 ## 1. Punitive Proof-of-Adequacy
 
