@@ -159,21 +159,56 @@ Users/reporters who have a **settlement** result against their will, can appeal 
 
 
 
-## 4. Security measurement
+## 4 Witness Assignment Logic , or : DAG2D, Blockchain at scale
+
+
+As the blockchain technology growths, more need to develop new ideas are nescessary. We then create a 2 dimensional blockchain
+
+The 2 dimensional blockchain consists in :
+
+1. generate a Directed Acyclic Graph, as the parent node , this parent node will hold the previous block number, the previous child node block generated, the Witness which generated it and the hash power (or mining power). The genesis block would have the representation like :
+
+```javascript
+{
+GB: 00000000000000000000000000000000,
+CN: 00000000000000000000000000000000,
+GW: 00000000000000000000000000000000
+HP: 688A044D54361D5762100BD1E6559AF4
+}
+```
+2. the child blockchain of the parent node. This blockchain have the lenght of the hash power of the parent node
+
+The blockchain will be kept by the Witness responsable for each parent node to hold the information of the parent node and the child blockchain. On the child blockchain is that the **settlement** results will be stored.
+
+Once the child blockchain reach it's total lenght. The algorithm fires the challenge to generate 2 aditional parent nodes. The Witness dipute to generate the blocks, the winner will be designated to be the holder of the new block, if it don't doesn't brake the non holder law
+
+***non holder law*** : No parent node can be without a _n_ of Witness as the holder(s).
+
+Every new Witness on the network will be assigned to a parent node and will record it on it's registration on the network.
+
+Any Witness on the network can record data to a child blockchain. When a Witness win the competition to write a new child blockchain node, it's consults if the parent node have the lenght achieved, if so, it checks if there is any other parent node which it didnt reach it's full lengh. If it exists, the Witness record the data and generate the node on that blockchain , if not, it requests to the network to a new parent node to be generated.
+
+The Witness which required a parent node to be generated can't dispute on this process, it awayts to a new parent block to be generated to record the transaction it is holding.
+
+The Witness dispute to record a new parent node or child node it's based on it's reputation, using a `Inversed Proof-of-Stake`. When a there is data to be recorded to a block , the Witness available to do it will ask to do it, the Witness with the higher reputation it granted to record the block , if a Witness win a dispute more than _n_ times, your Reputation it's degraded. When a Witness looses for _n_ times, it's reputation its increased. And if a Witness looses _n_ times even after it's reputation, it is granted the right to generate the next block. If there is a conflict where the 2 or more Witness have the same right to write a block , it wins who have more timestamp holder of a parent block.  
+
+
+## 5. Security measurement
 How to secure the block
 
 
-## 5. Pros
+## 6. Pros
 Companys can use the platform where the pool of nodes to be reviewed can give more returns for the content **Reviewers**
 Platform can be `onPrem` or `onCloud`.
 **Reviews** can be more reliable.
 
-## 6. Cons
+## 7. Cons
 
 Who review the **Reviewer**
 
 Develop how the platform will recieve the content from the **Issuer** and deliver it to the **Reviewer**
 
 Define how a appeal must be accepeted by a **Reviewer**. A `punitive proof-of-adequacy` must be implemented in full to enforce the need of the reviewer be trustfull on his/her review(also can work for managing the user behaviour)
+
 
 
