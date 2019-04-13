@@ -182,7 +182,7 @@ HP: '688A044D54361D5762100BD1E6559AF4'
 
 2. the child blockchain of the parent node. This blockchain have the lenght of the hash power of the parent node
 
-![](images/blockwithChild.png "Parent block")
+![](images/blockwithChild.PNG "Parent block")
 
 The blockchain will be kept by the Witness responsable for each parent node to hold the information of the parent node and the child blockchain. On the child blockchain is that the **settlement** results will be stored.
 
