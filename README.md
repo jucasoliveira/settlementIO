@@ -192,6 +192,8 @@ Once the child blockchain reach it's total lenght. The algorithm fires the chall
 
 ![](images/parendNodeLedger.png "Parent block")
 
+#### 4.1 Inversed Proof-of-Stake
+
 Every new Witness on the network will be assigned to a parent node and will record it on it's registration on the network.
 
 Any Witness on the network can record data to a child blockchain. When a Witness win the competition to write a new child blockchain node, it's consults if the parent node have the lenght achieved, if so, it checks if there is any other parent node which it didnt reach it's full lengh. If it exists, the Witness record the data and generate the node on that blockchain , if not, it requests to the network to a new parent node to be generated.
