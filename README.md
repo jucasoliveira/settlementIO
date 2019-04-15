@@ -23,10 +23,11 @@ to be approached.
 
 ## Goal
 
-The goal of settlementIO it's to define a Level 2 settlement algorithm and , with the approach of a new type of 
-blockchain and Level 1 consensus, be able to create a Concurrency based on smart contracts where the content to be reviewed 
-will be issued, reviewed and the result recorded , using digital signature, third party reviewers and law abid owners. 
-To achieve this Goal , the contentIO will use a consensus algorithm called `Punitive Proof-of-Adequacy`
+The goal of settlementIO it's to make a use of the Level 2 settlement algorithm described on this paper , with the approach 
+of a new type of  blockchain and Level 1 consensus, be able to create a Concurrency based on smart contracts where the 
+content to be reviewed  will be issued, reviewed and the result recorded , using digital signature, third party reviewers 
+and law abide owners. 
+To achieve this Goal , the  Level 2 settlement algorithm that contentIO will use it's called `Punitive Proof-of-Adequacy`
 
 ## 1. Punitive Proof-of-Adequacy
 
