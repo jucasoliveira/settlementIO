@@ -63,7 +63,7 @@ settlementResult : {
 A [Witness](#Witness) it's assigned to generate a block on the blockchain via PoS, PoW or the [Witness](#Witness) Assignment Logic. Then it will take _n_ data from the [pool of results](#pool-of-results) and record it on the blockchain
 
 
-##### In a nutshel the processe will be like this :
+#### 1.1.1 In a nutshel :
 
 ![](images/poanutshell.png "Parent block")
 
