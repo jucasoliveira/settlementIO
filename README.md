@@ -215,8 +215,10 @@ The Witness dipute to generate the blocks, the winner will be granted as the cre
 
 ![](images/parendNodeLedger.png "Parent block")
 
-#### 4.1 Inversed Proof-of-Stake
+The main goal on this ledger is to use the parent nodes as indexation nodes, which can be used to faster retrieve previous
+transactions on the blockchain.  
 
+#### 4.1 Inversed Proof-of-Stake
 
 Any Witness on the network can record data to a child blockchain.
 When a Witness win the competition to write a new child blockchain node, it's consults if the parent node have the
@@ -238,8 +240,7 @@ it is granted the right to generate the next block.
 If there is a conflict where the 2 or more Witness have the same right to write a block , 
 it wins who have more timestamp on the network. A challenge to found a nounce can be added to the ledger.
 
-The main goal on this ledger is to use the parent nodes as indexation nodes, which can be used to faster retrieve previous
-transactions on the blockchain.  
+
 
 
 ## 5. Security measurement
