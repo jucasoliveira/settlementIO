@@ -17,7 +17,15 @@ The goal of settlementIO it's to define a Level 2 settlement algorithm and , wit
 
 ## 1. Punitive Proof-of-Adequacy
 
-The punitive Proof-of-Adequacy is a type of  "Layer 2" settlement algorithm protocol that operates on top of a blockchain-based cryptocurrency network that aims to use distributed consensus to achieve a result on a **settelment** dispute. In PoA-based cryptocurrencies there are 1-2 level of consensus, where PoA act choosing odd _n_ P2P curators([Reviewers](#33-Reviewer)) of a **settelment** via various combinations of random selection of [Reputations](#Reputation), and use prizes, bounty,point achievements / fees to be shared among peers curators and the creator, known as [Witness](#Witness), of the next block(settlement fee). In able to record on the block, The [Witness](#Witness) can follow another method of consensus. PoA can work standalone, having it's own [Witness](#Witness) Assignment Logic to record the **settlement** result on the block, but it's better described being itself a layer of achievment of a Smart Contract Settlement.
+The punitive Proof-of-Adequacy is a type of  "Layer 2" settlement algorithm protocol that operates on top of a 
+blockchain-based cryptocurrency network that aims to use a distributed consensus to achieve a result on a **settelment** 
+dispute. In PoA-based cryptocurrencies there is an earlier level of consensus, where PoA act creating a network channel ,
+choosing odd _n_ P2P curators([Reviewers](#33-Reviewer)) of a **settelment** dispute via various combinations of 
+random selection of [Reputations](#Reputation), finally generating a smart contract of the result of the dispute , using
+the fees to be shared among peers curators and the creator, known as [Witness](#Witness), of the next block. 
+
+In able to record on a blockchain, PoA have little to none participation, and  The [Witness](#Witness) can be any Blockchain
+smart contract-based network.
 
 ### 1.1 Process
 
@@ -168,11 +176,17 @@ Users/reporters who have a **settlement** result against their will, can appeal 
 ## 4 Witness Assignment Logic , or : DAG2D, Blockchain at scale
 
 
-As the blockchain technology growths, more need to develop new ideas are nescessary. The current solutions to solve the scalability of a blockchain relied on a unique linea block. But that's not the only way a blockchain can grow. Trying to achieve a higher level of scalability, i've decided to create a new approach , i've decided to create a blockchain ledger which can achieve a bi-dimentional chain of transactions.
+As the blockchain technology growths, more need to develop new ideas are nescessary.
+ The current solutions to solve the scalability of a blockchain relied on a unique linear block. 
+ But that's not the only way a blockchain can grow. T
+ rying to achieve a higher level of scalability, i've decided to create a new approach , 
+ i've decided to create a blockchain ledger which can achieve a bi-dimentional chain of transactions.
 
 The 2 dimensional blockchain consists in :
 
-1. generate a Directed Acyclic Graph, as the parent node , this parent node will hold the previous block number, the previous child node block generated, the previous Witness which generated it parent block  and the hash power (or mining power). The genesis block would have the representation like :
+1. generate a Directed Acyclic Graph, as the parent node , this parent node will hold the previous block number, 
+the previous child node block generated, the previous Witness which generated it parent block  
+and the hash power (or mining power) as the lenght of that node. The genesis block would have the representation like :
 
 ```javascript
 {
@@ -186,28 +200,46 @@ HP: '688A044D54361D5762100BD1E6559AF4'
 ![](images/dag2.png "Parent block")
 
 
-2. the child blockchain of the parent node. This blockchain have the lenght of the hash power of the parent node
+2. the child blockchain of the parent node. This blockchain have the lenght of the hash power of the parent node, meaning
+it can't have more than the lenght of the parent node grant.
+All the blocks of this chain will have on it's data the record of the previous block and the parent node block.
 
 ![](images/blockwithChild.PNG "Parent block")
 
-The blockchain will be kept by the Witness responsable for each parent node to hold the information of the parent node and the child blockchain. On the child blockchain is that the **settlement** results will be stored.
+On the child blockchain is that the **settlement** results will be stored.
 
-Once the child blockchain reach it's total lenght. The algorithm fires the challenge to generate 2 aditional parent nodes. The Witness dipute to generate the blocks, the winner will be designated to be the holder of the new block, if it don't doesn't brake the non holder law
-
-***non holder law*** : No parent node can be without a _n_ of Witness as the holder(s).
+Once the child blockchain reach it's total lenght. 
+The algorithm fires the challenge to generate 2 aditional parent nodes. 
+The Witness dipute to generate the blocks, the winner will be granted as the creator of the parent node.
 
 
 ![](images/parendNodeLedger.png "Parent block")
 
 #### 4.1 Inversed Proof-of-Stake
 
-Every new Witness on the network will be assigned to a parent node and will record it on it's registration on the network.
 
-Any Witness on the network can record data to a child blockchain. When a Witness win the competition to write a new child blockchain node, it's consults if the parent node have the lenght achieved, if so, it checks if there is any other parent node which it didnt reach it's full lengh. If it exists, the Witness record the data and generate the node on that blockchain , if not, it requests to the network to a new parent node to be generated.
+Any Witness on the network can record data to a child blockchain.
+When a Witness win the competition to write a new child blockchain node, it's consults if the parent node have the
+length achieved, if so, it checks if there is any other parent node which it didnt reach it's full length. 
+If it exists, the Witness record the data and generate the node on that blockchain , if not, 
+it requests to the network to a new parent node to be generated.
 
-The Witness which required a parent node to be generated can't dispute on this process, it awayts to a new parent block to be generated to record the transaction it is holding.
+The Witness which required a parent node to be generated can't dispute on this process, 
+it awaits to a new parent block to be generated to record the transaction it is holding.
 
-The Witness dispute to record a new parent node or child node it's based on it's reputation, using a `Inversed Proof-of-Stake`. When a there is data to be recorded to a block , the Witness available to do it will ask to do it, the Witness with the higher reputation it granted to record the block , if a Witness win a dispute more than _n_ times, your Reputation it's degraded. When a Witness looses for _n_ times, it's reputation its increased. And if a Witness looses _n_ times even after it's reputation, it is granted the right to generate the next block. If there is a conflict where the 2 or more Witness have the same right to write a block , it wins who have more timestamp holder of a parent block.  
+The Witness dispute to record a new parent node or child node it's based on it's reputation, 
+using a `Inversed Proof-of-Stake`. 
+When a there is data to be recorded to a block , 
+the Witness available to do it will ask to do write, the Witness with the 
+higher reputation it granted to record the block , if a Witness win a dispute more than _n_ times, 
+your Reputation it's degraded. When a Witness looses for _n_ times, 
+it's reputation its increased. And if a Witness looses _n_ times even after it's reputation, 
+it is granted the right to generate the next block. 
+If there is a conflict where the 2 or more Witness have the same right to write a block , 
+it wins who have more timestamp on the network. A challenge to found a nounce can be added to the ledger.
+
+The main goal on this ledger is to use the parent nodes as indexation nodes, which can be used to faster retrieve previous
+transactions on the blockchain.  
 
 
 ## 5. Security measurement
