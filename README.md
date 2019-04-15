@@ -195,13 +195,19 @@ _R_['Non-Trustfull'] = 45%. The reputation defines the power of the vote of each
 it's the benchmark voter, where "MidLevel" has `1.5*ntt` vote power , and the "Trustful" _R_ having `2.5*ntt` vote 
 power.
 
-
 ### 1.7 Result
+
+The result of a dispute will generate a Smart Contract to be recorded.
 
 ### 1.8 Pool of Results
 
+All the results will be queue on a pool to be consumed.
+
 ### 1.9 Reputation gratifications/punishment
 
+After the result it's defined , the Reputation algorithm it's fired, analysing the voters and the outcomes of the result.
+When analysed, the algorithm it grants the gratification, which is gave by taking the total fee and spreading the value 
+to the winner voters and the amount divided by the peers Reputation.
 
 ### 1.10 Benefit of doubt
 A **settlement** dispute must have a trustful result, and for that, a **settlement** have to be reviewed by a odd `n` 
@@ -225,6 +231,8 @@ A company like Facebook , request to the blockchain a content to be reviewed , i
 that content.
 
 ### 3.2 Reporter
+
+Who's generate the dispute to be distributed by the Issuer.
 
 ### 3.3 Reviewer 
 The first `n` users connected to the platform who selfAssign the review lock the analysis of that content and give 
