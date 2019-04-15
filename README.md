@@ -34,7 +34,7 @@ To achieve this Goal , the  Level 2 settlement algorithm that contentIO will use
 The punitive Proof-of-Adequacy is a type of  "Layer 2" settlement algorithm protocol that operates on top of a 
 blockchain-based cryptocurrency network that aims to use a distributed consensus to achieve a result on a **settlement** 
 dispute. In PoA-based cryptocurrencies there is an earlier level of consensus, where PoA act creating a network channel ,
-choosing odd _n_ P2P curators([Reviewers](#33-Reviewer)) of a **settlement** dispute via various combinations of 
+assigning an odd _n_ P2P curators([Reviewers](#33-Reviewer)) of a **settlement** dispute via various combinations of 
 random selection of [Reputations](#Reputation), finally generating a smart contract of the result of the dispute , using
 the fees to be shared among peers curators and the creator, known as [Witness](#Witness), of the next block. 
 
