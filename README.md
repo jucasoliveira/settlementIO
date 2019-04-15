@@ -174,12 +174,17 @@ The weight of the votes it's referred on the [Vote System Weight](#vote-system-w
 
 ### 1.3 Bounty
 
+Bounty it's a additional fee inserted on the **settlement** dispute , created to enable the possibility of a Issuer to 
+require a faster result on a dispute it's generated. A dispute with an added bounty it gains priority on top of any other 
+dispute on the network.
+
 ### 1.4 Reputation
 
 A Range of reputation(_rp_) it's given to the _R_ , these are "Trustful", "MidLevel", "Non-Trustful" and "Undesirable".
  When a new _R_ it's created, a "Non-Trustful" level it's assign to it's status. The more engaged 
  
 ### 1.5 Waiting time 
+
 The Last Will be First.
 
 ### 1.6 Vote System Weight
