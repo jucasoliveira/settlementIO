@@ -256,87 +256,16 @@ Users/reporters who have a **settlement** result against their will, can appeal 
  dispute were post in course
 
 
-
-## 4 Witness Assignment Logic , or : DAG2D, Index at scale
-
-
-As the blockchain technology growths, more need to develop new ideas are necessary.
- The current solutions to solve the scalability of a blockchain relied on a unique linear block. 
- But that's not the only way a blockchain can grow. Trying to achieve a higher level of scalability, i've decided 
- to create a new approach , i've decided to create a blockchain ledger which can achieve a bi-dimensional chain 
- of transactions.
-
-The 2 dimensional blockchain consists in :
-
-1. generate a Directed Acyclic Graph, as the parent node , this parent node will hold the previous block number, 
-the previous child node block generated, the previous Witness which generated it parent block  
-and the hash power (or mining power) as the lenght of that node. The genesis block would have the representation like :
-
-```javascript
-block = {
-GB: '00000000000000000000000000000000',
-CN: '00000000000000000000000000000000',
-GW: '00000000000000000000000000000000',
-HP: '688A044D54361D5762100BD1E6559AF4'
-}
-```
-
-![](images/dag2.png "Parent block")
-
-
-2. the child blockchain of the parent node. This blockchain have the length of the hash power of the parent node, meaning
-it can't have more than the length of the parent node grant.
-All the blocks of this chain will have on it's data the record of the previous block and the parent node block.
-
-![](images/blockwithChild.PNG "Parent block")
-
-On the child blockchain is that the **settlement** results will be stored.
-
-Once the child blockchain reach it's total length. 
-The algorithm fires the challenge to generate 2 additional parent nodes. 
-The Witness dispute to generate the blocks, the winner will be granted as the creator of the parent node.
-
-
-![](images/parendNodeLedger.png "Parent block")
-
-The main goal on this ledger is to use the parent nodes as indexation nodes, which can be used to faster retrieve previous
-transactions on the blockchain.  
-
-#### 4.1 Inversed Proof-of-Stake
-
-Any Witness on the network can record data to a child blockchain.
-When a Witness win the competition to write a new child blockchain node, it's consults if the parent node have the
-length achieved, if so, it checks if there is any other parent node which it didnt reach it's full length. 
-If it exists, the Witness record the data and generate the node on that blockchain , if not, 
-it requests to the network to a new parent node to be generated.
-
-The Witness which required a parent node to be generated can't dispute on this process, 
-it awaits to a new parent block to be generated to record the transaction it is holding.
-
-The Witness dispute to record a new parent node or child node it's based on it's reputation, 
-using a `Inversed Proof-of-Stake`. 
-When a there is data to be recorded to a block , 
-the Witness available to do it will ask to do write, the Witness with the 
-higher reputation it granted to record the block , if a Witness win a dispute more than _n_ times, 
-your Reputation it's degraded. When a Witness looses for _n_ times, 
-it's reputation its increased. And if a Witness looses _n_ times even after it's reputation, 
-it is granted the right to generate the next block. 
-If there is a conflict where the 2 or more Witness have the same right to write a block , 
-it wins who have more timestamp on the network. A challenge to found a nounce can be added to the ledger.
-
-
-
-
-## 5. Security measurement
+## 4. Security measurement
 How to secure the block
 
 
-## 6. Pros
+## 5. Pros
 Company can use the platform where the pool of nodes to be reviewed can give more returns for the content **Reviewers**
 Platform can be `onPrem` or `onCloud`.
 **Reviews** can be more reliable.
 
-## 7. Cons
+## 6. Cons
 
 Who review the **Reviewer**
 
