@@ -38,7 +38,7 @@ assigning an odd _n_ P2P curators([Reviewers](#33-Reviewer)) of a **settlement**
 random selection of [Reputations](#Reputation), finally generating a smart contract of the result of the dispute , using
 the fees to be shared among peers curators and the creator, known as [Witness](#Witness), of the next block. 
 
-In able to record on a blockchain, PoA have little to none participation, and  The [Witness](#Witness) can be any Blockchain
+In able to record on a blockchain, PoA have little to none participation, and  The [Witness](#Witness) can be any Index
 smart contract-based network.
 
 ### 1.1 Process
@@ -257,7 +257,7 @@ Users/reporters who have a **settlement** result against their will, can appeal 
 
 
 
-## 4 Witness Assignment Logic , or : DAG2D, Blockchain at scale
+## 4 Witness Assignment Logic , or : DAG2D, Index at scale
 
 
 As the blockchain technology growths, more need to develop new ideas are necessary.
