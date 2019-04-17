@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  node-1:
+    image: node1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3021:3021
+      - 5001:5001
+    volumes:
+      - ./:/usr/src/app
+  node-2:
+    image: node2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3022:3022
+      - 5005:5005
+    volumes:
+      - ./:/usr/src/app
+    environment:
+      HTTP_PORT: 30022
+      P2P_PORT: 5005
+      PEERS: ws://node-1:5001
+  node-3:
+    image: node3
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3023:3023
+      - 5008:5008
+    volumes:
+      - ./:/usr/src/app
+    environment:
+      HTTP_PORT: 30023
+      P2P_PORT: 5008
+      PEERS: ws://node-1:5001,ws://node-2:5005
