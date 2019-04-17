@@ -23,7 +23,7 @@ to be approached.
 
 ## Goal
 
-The goal of settlementIO it's to make a use of the Level 2 settlement algorithm described on this paper , with the approach 
+The goal of settlementIO it's to create a DAO(Decentralized Autonomous Organization) using a Level 2 settlement algorithm described on this paper , with the approach 
 of a new type of  blockchain and Level 1 consensus, be able to create a Concurrency based on smart contracts where the 
 content to be reviewed  will be issued, reviewed and the result recorded , using digital signature, third party reviewers 
 and law abide owners. 
