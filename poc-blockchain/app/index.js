@@ -3,17 +3,32 @@ const bodyParser = require('body-parser');
 const chalk = require('chalk');
 const Blockchain = require('../blockchain');
 const P2pServer = require('./psp-server');
+const Wallet = require('../wallet');
+const TransactionPool = require('../wallet/transaction-pool');
 
 const HTTP_PORT = process.env.HTTP_PORT || 3021;
 
 const app = express();
 const bc = new Blockchain();
-const p2pServer = new P2pServer(bc);
+const wallet = new Wallet();
+const tp = new TransactionPool();
+const p2pServer = new P2pServer(bc, tp);
 
 app.use(bodyParser.json());
 
 app.use('/blocks', (req, res)=>{
    res.json(bc.chain)
+});
+
+app.use('/transactions',(req, res)=>{
+   res.json(tp.transactions);
+});
+
+app.use('/transact', (req, res)=>{
+   const { recipient, amount } = req.body;
+   const transaction = wallet.createTransaction(recipient,amount, tp);
+   p2pServer.broadcastTransaction(transaction);
+   res.redirect('/transactions');
 });
 
 app.use('/mine',(req,res)=>{
