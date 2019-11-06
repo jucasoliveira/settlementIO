@@ -102,6 +102,13 @@ record it on the blockchain
 
 ![](images/nutshell2.png "Parent block")
 
+> 1 - A dispute is made to the network following a certain rule it’s being request.
+> 2 - One peer of the network , defined as Issuer, will register the dispute and request to other peers to be assigned.
+> 3 - Peers request to assign as a Reviewer to the dispute, and a odd number of Reviewers will be chosen by the issuer.
+  4 - Peers granted the availability it will be sorted by their reputation on the network.
+  5 - Reputations are defined on the previous actions the peers made.
+  6 - The result generates a Smart Contract.
+  7 - The dispute results it’s informed back.
 
 
 ### 1.2 Appeal
