@@ -58,8 +58,8 @@ settlementIssued = {
     appealer : '39AAF3FEF253178E15963B9CC27DA138'
 }
 ```
-The request it's sent to a Assigment Pool , where the Issuer will accept a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, 
-who requested to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are 
+The request it's sent to a Assigment Pool , where the Issuer will accept a number(_n_) of _r_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _r_, 
+who requested to be assigned to review the content issued. The _r_ assigned to the content to be reviewed are 
 designated based on the following :
 
 - Position on the assignment pool
@@ -151,19 +151,14 @@ appealBlockingResult = {
 
 ### 1.3 Assignment pool
 
-When a _R_ request a **settlement** for a review , the algorithm will gets the first [reviewer](#33-Reviewer) available 
-on the Pool (_P_) of assigment and ask for a review, then the [reviewer](#33-Reviewer) it's sent to the end of the _P_. 
-The [reviewer](#33-Reviewer) will recieve the **settlement** and the _I_ rules and define if the **settlement** it's on 
-favor or against the [Reporter](#Reporter). After the [reviewer](#33-Reviewer) gives it's vote, the algorithm will 
-require for the next assignee [reviewers](#33-Reviewer) on the _P_, having this [reviewer](#33-Reviewer) a different 
-level of [Reputation](#Reputation)(as seen on [Assignment Ordenation](#121-assignment-ordenation)). After the minimum 
-of 7 votes, the algorithm checks if the **settlement** have a result, if not it will assing another 
-[reviewer](#33-Reviewer) until the next odd _n_ of votes and check for the result, having this behaviour until _n_ of 
-votes it's 25.   
-This _P_ it's responsible to queue the assignees to be assign to a next **settlement**. The quantity of _R_ to be 
-assigned(_A_) will be the minimum of 7, to a maximum of 25.
+When a _R_ request a **settlement** for a review , the Issuer will gets the first [reviewer](#33-Reviewer) available 
+on the Pool (_P_) of assigment and ask for a review, then the [reviewer](#33-Reviewer) it's sent to the end of the _P_.
+The position on the assigment pool are defined by time connected on the network, and the position is distributed among the peers. 
+Having the top position on the Assigment Pool doesn't automatically grants the  [reviewer](#33-Reviewer) the assigment from the Issuer,
+it's only a another measurement used to define the assignee of a dispute.
 
-> `_A_ = _R_.get((reviewer) => { return reviewer })`
+
+> `_A_ = _I_.get((reviewer) => reviewer.position )`
 
 #### 1.3.1 Assignment Ordination
 In order to keep the pool assignment with the must trustful result as possible, the [Reputation](#14-reputation) of 
@@ -191,7 +186,17 @@ A Range of reputation(_rp_) it's given to the _R_ , these are "Trustful", "MidLe
 While in the pool, the _R_ will record it's waiting time, which means the time it connected to the network and hasn't been granted a assigment.
 The waiting time is a metric used when a Issuer recieves request of assigment of the peers _R_
 
-### 1.6 Vote System Weight
+### 1.6 Vote System && Weight
+
+The [reviewer](#33-Reviewer) will recieve the **settlement** and the _I_ rules and define if the **settlement** it's on 
+favor or against the [Reporter](#Reporter). After the [reviewer](#33-Reviewer) gives it's vote, the _I_ will 
+require for the next assignee [reviewers](#33-Reviewer) on the _P_, having this [reviewer](#33-Reviewer) a different 
+level of [Reputation](#Reputation)(as seen on [Assignment Ordenation](#121-assignment-ordenation)). After the minimum 
+of 7 votes, the algorithm checks if the **settlement** have a result, if not it will assing another 
+[reviewer](#33-Reviewer) until the next odd _n_ of votes and check for the result, having this behaviour until _n_ of 
+votes it's 25.   
+This _P_ it's responsible to queue the assignees to be assign to a next **settlement**. The quantity of _R_ to be 
+assigned(_A_) will be the minimum of 7, to a maximum of 25.
 
 A _A_ must have assignees distributed on the following reputation  : _R_['Trustfull'] = 25% , _R_['MidLevel'] = 30%, 
 _R_['Non-Trustfull'] = 45%. The reputation defines the power of the vote of each assignees. The "Non-Trustful"(_ntt_) 
@@ -230,7 +235,7 @@ truth when a [Benefit of doubt](#110-benefit-of-doubt) it's on.
 ## 3. Actors
 
 ### 3.1 Issuer
-It's the peer who has access to the PoA network to send the **Settlement** dispute over the pool of assigment. The Issuer can be either the Reporter, 
+It's the peer who has access to the PoA network to send the **Settlement** dispute over the pool of assigment and accept [Reviewers](#33-Reviewer) request to it. The Issuer can be either the Reporter, 
 Appealer or a network access holder, such as companies who wish to create their private PoA network. 
 
 
