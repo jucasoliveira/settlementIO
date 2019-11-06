@@ -45,7 +45,7 @@ smart contract-based network.
 
 ### 1.1 Process
 
-When a [Reporter](#Reporter) file a **settlement** against the [Appealer](#35-appealer) , the Issuer(_I_) sends to the 
+When a [Reporter](#Reporter) file a **settlement** against the [Appealer](#35-appealer) , the Issuer(_I_) recieve the dispute, then sends to the 
 network the **settlement** to be reviewed(_r_), at this moment a [bounty](#Bounty) can be issued. It's from the discreet 
 of the [_I_](#31-issuer) to notify the Appealed of the **settlement** dispute in course, if don't, 
 it must be send the information.
@@ -58,8 +58,8 @@ settlementIssued = {
     appealer : '39AAF3FEF253178E15963B9CC27DA138'
 }
 ```
-The system will take a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, 
-to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are 
+The request it's sent to a Assigment Pool , where the Issuer will accept a number(_n_) of _R_ , where this _n_ it's a odd quantity of minimum of 7, to a maximum of 25 of _R_, 
+who requested to be assigned to review the content issued. The _R_ assigned to the content to be reviewed are 
 designated based on the following :
 
 - Position on the assignment pool
