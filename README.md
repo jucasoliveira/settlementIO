@@ -188,7 +188,8 @@ A Range of reputation(_rp_) it's given to the _R_ , these are "Trustful", "MidLe
  
 ### 1.5 Waiting time 
 
-The Last Will be First.
+While in the pool, the _R_ will record it's waiting time, which means the time it connected to the network and hasn't been granted a assigment.
+The waiting time is a metric used when a Issuer recieves request of assigment of the peers _R_
 
 ### 1.6 Vote System Weight
 
