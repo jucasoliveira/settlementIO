@@ -23,20 +23,22 @@ to be approached.
 
 ## Goal
 
-The goal of settlementIO it's to create a DAO(Decentralized Autonomous Organization) using a Level 2 settlement algorithm described on this paper , with the approach 
-of a new type of  blockchain and Level 1 consensus, be able to create a Concurrency based on smart contracts where the 
-content to be reviewed  will be issued, reviewed and the result recorded , using digital signature, third party reviewers 
+The goal of settlementIO it's to create a DAO(Decentralized Autonomous Organization) using a Level 2 settlement algorithm described on this paper , being able to create a Concurrency based on smart contracts where the 
+dispute will be issued, reviewed and the result recorded , using digital signature, third party reviewers 
 and law abide owners. 
 To achieve this Goal , the  Level 2 settlement algorithm that contentIO will use it's called `Punitive Proof-of-Adequacy`
 
 ## 1. Punitive Proof-of-Adequacy
 
 The punitive Proof-of-Adequacy is a type of  "Layer 2" settlement algorithm protocol that operates on top of a 
-blockchain-based cryptocurrency network that aims to use a distributed consensus to achieve a result on a **settlement** 
-dispute. In PoA-based cryptocurrencies there is an earlier level of consensus, where PoA act creating a network channel ,
-assigning an odd _n_ P2P curators([Reviewers](#33-Reviewer)) of a **settlement** dispute via various combinations of 
-random selection of [Reputations](#Reputation), finally generating a smart contract of the result of the dispute , using
+blockchain-based smart contract network that aims to use a distributed consensus to achieve a result on a **settlement** 
+dispute. In PoA protocol there is an earlier level of consensus, where the peers who hold the PoA act creating a network channel ( a Pool ) ,
+assigning an odd _n_ P2P curators([Reviewers](#33-Reviewer)) connected to the network, giving them access on a **settlement** dispute via various combinations of 
+random selection of [Reputations](#Reputation), thus generating a smart contract of the result of the dispute , using
 the fees to be shared among peers curators and the creator, known as [Witness](#Witness), of the next block. 
+
+
+
 
 In able to record on a blockchain, PoA have little to none participation, and  The [Witness](#Witness) can be any Index
 smart contract-based network.
@@ -227,8 +229,9 @@ truth when a [Benefit of doubt](#110-benefit-of-doubt) it's on.
 ## 3. Actors
 
 ### 3.1 Issuer
-A company like Facebook , request to the blockchain a content to be reviewed , issuing a value(bounty) to be paid for 
-that content.
+It's the peer who has access to the PoA network to send the **Settlement** dispute over the pool of assigment. The Issuer can be either the Reporter, 
+Appealer or a network access holder, such as companies who wish to create their private PoA network. 
+
 
 ### 3.2 Reporter
 
