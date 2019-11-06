@@ -100,7 +100,7 @@ record it on the blockchain
 
 #### 1.1.1 In a nutshel :
 
-![](images/poanutshell.png "Parent block")
+![](images/nutshell2.png "Parent block")
 
 
 
