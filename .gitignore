@@ -2,5 +2,5 @@
 ./.idea
 node_modules
 ./poc-blockchain/node_modules
-./poc_rust/target
-./poc_rust/**/*.rs.bk
+poc_rust/**/*.rs.bk
+poc_rust/target
