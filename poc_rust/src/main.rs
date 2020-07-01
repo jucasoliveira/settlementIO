@@ -1,16 +1,34 @@
-use std::io;
+mod args;
 
 
-fn main() {
-    println!("Guess the number!");
+use actix_web::{get,web, App, HttpResponse, HttpServer, Responder};
+use crate::args::Status;
 
-    println!("Please input your guess.");
 
-    let mut guess = String::new();
+#[get("/")]
+async fn index() -> impl Responder {
+    HttpResponse::Ok().body("Hello world!")
+}
 
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
+#[get("/again")]
+async fn index2() -> impl Responder {
+    HttpResponse::Ok().body("Hello world again!")
+}
 
-    println!("You guessed: {}", guess);
+async fn status() -> impl Responder {
+    web::HttpResponse::Ok()
+        .json(Status { status: "OK".to_string() })
+}
+
+#[actix_rt::main]
+async fn main() -> std::io::Result<()> {
+
+    println!("Starting Server at http://127.0.0.1:8088", );
+    HttpServer::new(|| {
+        App::new()
+            .route("/", web::get().to(status))
+    })
+    .bind("127.0.0.1:8088")?
+    .run()
+    .await
 }
