@@ -15,26 +15,26 @@ When I started to write this white paper, my main goal was to create a distribut
 expand their review process without having the cost to hire more thousand of workers to review a exponential amount of data, 
 where in a future will be almost impossible to them to review every content reported.
 
-But , seeing that I could expand this to another areas, I realize this method of consensus I was trying to achieve was 
+But, seeing that I could expand this to another areas, I realize this method of consensus I was trying to achieve was 
 creating a new and private judgment system.
 
-So, in order to take content review, games, and even the Justice to a new level , a new approach for this issue needs 
+So, in order to take content review, games, and even the Justice to a new level, a new approach for this issue needs 
 to be approached.
 
 ## Goal
 
-The goal of settlementIO it's to create a DAO(Decentralized Autonomous Organization) using a Level 2 settlement algorithm described on this paper , being able to create a Concurrency based on smart contracts where the 
-dispute will be issued, reviewed and the result recorded , using digital signature, third party reviewers 
+The goal of settlementIO it's to create a DAO (Decentralized Autonomous Organization) using a Level 2 settlement algorithm described on this paper, being able to create a Concurrency based on smart contracts where the 
+dispute will be issued, reviewed and the result recorded, using digital signature, third party reviewers 
 and law abide owners. 
-To achieve this Goal , the  Level 2 settlement algorithm that contentIO will use it's called `Punitive Proof-of-Adequacy`
+To achieve this Goal, the  Level 2 settlement algorithm that contentIO will use it's called `Punitive Proof-of-Adequacy`
 
 ## 1. Punitive Proof-of-Adequacy
 
 The punitive Proof-of-Adequacy is a type of  "Layer 2" settlement algorithm protocol that operates on top of a 
 blockchain-based smart contract network that aims to use a distributed consensus to achieve a result on a **settlement** 
 dispute. In PoA protocol there is an earlier level of consensus, where the peers who hold the PoA act creating a network channel ( a Pool ) ,
-assigning an odd _n_ P2P curators([Reviewers](#33-Reviewer)) connected to the network, giving them access on a **settlement** dispute via various combinations of 
-random selection of [Reputations](#Reputation), thus generating a smart contract of the result of the dispute , using
+assigning an odd _n_ P2P curators ([Reviewers](#33-Reviewer)) connected to the network, giving them access on a **settlement** dispute via various combinations of 
+random selection of [Reputations](#Reputation), thus generating a smart contract of the result of the dispute, using
 the fees to be shared among peers curators and the creator, known as [Witness](#Witness), of the next block. 
 
 
@@ -98,7 +98,7 @@ A [Witness](#Witness) it's assigned to generate a block on the blockchain via Po
 record it on the blockchain
 
 
-#### 1.1.1 In a nutshel :
+#### 1.1.1 In a nutshell :
 
 ![](images/nutshell2.png "Parent block")
 
